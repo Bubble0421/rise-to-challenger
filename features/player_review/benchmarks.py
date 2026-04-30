@@ -4,6 +4,7 @@ from __future__ import annotations
 import pandas as pd
 import streamlit as st
 
+from utils.demo_mode import get_demo_matches
 from utils.data import load_rank_matches
 
 
@@ -20,12 +21,13 @@ RANK_TO_DATASET = {
 
 @st.cache_resource
 def load_benchmark_matches(rank_label: str):
-    return load_rank_matches(rank_label)
+    matches = load_rank_matches(rank_label)
+    return matches or get_demo_matches()
 
 
 @st.cache_resource
 def load_optimal_builds():
-    matches = load_rank_matches("Challenger")
+    matches = load_rank_matches("Challenger") or get_demo_matches()
     builds = {}
     for match in matches:
         for p in match.get("info", {}).get("participants", []):

@@ -4,6 +4,7 @@ import requests
 import streamlit as st
 
 from api import PATCH, DATA_PATCH_LABEL, champion_icon_url
+from utils.demo_mode import get_demo_matches
 from utils.data import RANK_OPTIONS, load_rank_matches
 from utils.styles import GOLD, TEXT_MUTED, TEXT_COLOR, GRID_COLOR, WIN_COLOR, LOSS_COLOR, chart_layout, inject_css, render_sidebar, render_page_header, render_section_header
 from services.confidence_service import get_confidence_label, get_confidence_color, get_confidence_dot
@@ -25,6 +26,8 @@ CHAMP_TYPES  = ["Fighter", "Mage", "Assassin", "Marksman", "Support", "Tank"]
 @st.cache_data
 def load_meta(rank_label: str):
     matches = load_rank_matches(rank_label)
+    if not matches:
+        matches = get_demo_matches()
     match_count = len(matches)
     rows = []
     for match in matches:
@@ -128,16 +131,12 @@ render_sidebar()
 render_page_header("META ANALYSIS", f"Offline Master+ NA data · Patches {DATA_PATCH_LABEL}")
 
 if not RANK_OPTIONS:
-    st.warning("Offline ranked datasets are not available in this environment.")
-    st.info(
-        "To use Meta Analysis, collect local data first with `python scripts/collect_data.py`, "
-        "then reload the app."
-    )
-    st.stop()
+    st.info("Public demo fallback is active. Meta Analysis is using curated sample matches instead of local ranked datasets.")
 
 rank_col, role_col = st.columns(2)
 with rank_col:
-    selected_rank = st.selectbox("Rank", RANK_OPTIONS, index=0)
+    rank_options = RANK_OPTIONS or ["Portfolio Demo"]
+    selected_rank = st.selectbox("Rank", rank_options, index=0)
 with role_col:
     selected_role = st.selectbox("Role", list(ROLE_TO_POS.keys()), index=0)
 

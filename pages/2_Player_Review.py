@@ -17,6 +17,7 @@ from api import (
     profile_icon_url,
     rank_icon_url,
 )
+from core.config import RIOT_API_KEY
 from services.coach_service import (
     get_kpi_explanation,
     gold_diff_summary,
@@ -42,6 +43,12 @@ from features.player_review.parser import parse_match
 from utils.llm import create_chat_chain
 from utils.render import item_icon_html
 from utils.styles import GOLD, chart_layout, inject_css, render_sidebar, render_page_header, render_section_header
+from utils.demo_mode import (
+    DEMO_GAME_NAME,
+    DEMO_TAG_LINE,
+    get_demo_player_review_bundle,
+    public_demo_default,
+)
 from utils.timeline import (
     build_replay_checkpoints,
     parse_timeline,
@@ -856,25 +863,68 @@ render_sidebar()
 
 render_page_header("PLAYER REVIEW", "Real-time match data · Challenger benchmarks · AI coaching")
 
-col_input, col_slider = st.columns([3, 1])
-with col_input:
-    name_tag = st.text_input("Summoner Name#TAG", placeholder="e.g. Faker#KR1", key="summoner_input")
-with col_slider:
-    match_count = st.slider("Match count", 5, 20, 10)
+mode_options = ["Demo Mode", "Live Mode"]
+default_mode_index = 0 if public_demo_default() or not RIOT_API_KEY else 1
+selected_mode = st.radio(
+    "Review source",
+    mode_options,
+    index=default_mode_index,
+    horizontal=True,
+    help="Demo Mode uses curated sample matches for public deployments. Live Mode uses Riot API.",
+)
 
-if name_tag and "#" in name_tag:
-    game_name, tag_line = [p.strip() for p in name_tag.split("#", 1)]
+demo_bundle = None
+game_name = DEMO_GAME_NAME
+tag_line = DEMO_TAG_LINE
+
+if selected_mode == "Demo Mode":
+    st.info("Demo Mode is using curated sample matches, so the full review flow works without Riot API keys or local data collection.")
+    demo_bundle = get_demo_player_review_bundle()
+    summoner = demo_bundle["summoner"]
+    league = demo_bundle["league"]
+    rank_matches = demo_bundle["rank_matches"]
+    challenger_matches = demo_bundle["benchmark_matches"]
+    parsed = demo_bundle["parsed_matches"]
+    game_name = summoner["gameName"]
+    tag_line = summoner["tagLine"]
 else:
-    st.info("Enter a summoner name above to get started.")
-    st.stop()
+    col_input, col_slider = st.columns([3, 1])
+    with col_input:
+        name_tag = st.text_input("Summoner Name#TAG", placeholder="e.g. Faker#KR1", key="summoner_input")
+    with col_slider:
+        match_count = st.slider("Match count", 5, 20, 10)
 
-summoner = get_summoner(game_name, tag_line)
-if not summoner:
-    st.stop()
+    if not RIOT_API_KEY:
+        st.warning("Live Mode needs a valid `RIOT_API_KEY`. Switch to Demo Mode for the public portfolio flow.")
+        st.stop()
 
-league      = get_league_info(summoner["puuid"])
-rank_dataset = dataset_for_tier(league["tier"] if league else None)
-rank_matches = load_benchmark_matches(rank_dataset)
+    if name_tag and "#" in name_tag:
+        game_name, tag_line = [p.strip() for p in name_tag.split("#", 1)]
+    else:
+        st.info("Enter a summoner name above to get started.")
+        st.stop()
+
+    summoner = get_summoner(game_name, tag_line)
+    if not summoner:
+        st.stop()
+
+    league = get_league_info(summoner["puuid"])
+    rank_dataset = dataset_for_tier(league["tier"] if league else None)
+    rank_matches = load_benchmark_matches(rank_dataset)
+    match_ids = get_match_ids(summoner["puuid"], count=match_count)
+    if not match_ids:
+        st.warning("No recent ranked matches found.")
+        st.stop()
+
+    matches = []
+    with st.spinner("Loading match history..."):
+        for mid in match_ids:
+            detail = get_match_detail(mid)
+            if detail:
+                matches.append(detail)
+
+    parsed = [pm for m in matches for pm in [parse_match(summoner["puuid"], m)] if pm]
+    challenger_matches = load_benchmark_matches("Challenger")
 
 c_icon, c_name, c_rank, c_stats = st.columns([1, 2, 2, 2])
 with c_icon:
@@ -897,21 +947,9 @@ with c_stats:
         st.caption("No ranked data")
 
 st.divider()
-
-match_ids = get_match_ids(summoner["puuid"], count=match_count)
-if not match_ids:
-    st.warning("No recent ranked matches found.")
+if not parsed:
+    st.warning("No matches are available for this review source.")
     st.stop()
-
-matches = []
-with st.spinner("Loading match history..."):
-    for mid in match_ids:
-        detail = get_match_detail(mid)
-        if detail:
-            matches.append(detail)
-
-parsed = [pm for m in matches for pm in [parse_match(summoner["puuid"], m)] if pm]
-challenger_matches = load_benchmark_matches("Challenger")
 
 # ─── Multi-game trend sparklines ─────────────────────────────────────────────
 if len(parsed) >= 3:
@@ -1016,37 +1054,42 @@ with left_col:
     tl_parsed: dict | None = None
     replay_checkpoints: list[dict] = []
     timeline_raw = None
-    with st.spinner("Fetching timeline data..."):
-        timeline_raw = get_timeline(sel["match_id"])
+    if selected_mode == "Demo Mode":
+        tl_parsed = (demo_bundle or {}).get("timelines", {}).get(sel["match_id"])
+    else:
+        with st.spinner("Fetching timeline data..."):
+            timeline_raw = get_timeline(sel["match_id"])
 
-    if timeline_raw:
-        puuid = summoner["puuid"]
-        pid = get_participant_id_from_match(sel["match_obj"], puuid)
-        enemy_pid = get_enemy_participant_id_from_match(sel["match_obj"], puuid)
-        if pid:
-            tl_parsed = parse_timeline(timeline_raw, pid, enemy_pid)
-            replay_checkpoints = build_replay_checkpoints(tl_parsed)
-            gd_curve = list(tl_parsed["gold_diff_by_minute"].values())[:20]
-            death_times = ", ".join(format_minute(m) for m in tl_parsed.get("death_minutes", [])) or "none"
-            core_items = ", ".join(
-                f"{event['item_id']} at {format_minute(event['minute'])}"
-                for event in tl_parsed.get("core_item_minutes", [])
-            ) or "none"
-            objectives = ", ".join(
-                f"{event['type']} at {format_minute(event['minute'])}"
-                for event in tl_parsed.get("objective_events", [])
-            ) or "none"
-            timeline_data_str = (
-                f"CS at 10 min: {tl_parsed['cs_at_10']} (enemy: {tl_parsed['enemy_cs_at_10']}, "
-                f"diff: {tl_parsed['cs_at_10'] - tl_parsed['enemy_cs_at_10']:+d})\n"
-                f"CS at 15 min: {tl_parsed['cs_at_15']} (enemy: {tl_parsed['enemy_cs_at_15']})\n"
-                f"First death: minute {tl_parsed['first_death_minute']} ({classify_first_death(tl_parsed['first_death_minute'])})\n"
-                f"All player death timestamps: {death_times}\n"
-                f"First core item: minute {tl_parsed['first_item_minute']} (Challenger avg: {CHALL_AVG_ITEM_MIN} min)\n"
-                f"Core item purchase timestamps: {core_items}\n"
-                f"Objective timestamps: {objectives}\n"
-                f"Gold diff curve (min 0-{len(gd_curve)-1}): {gd_curve}\n"
-            )
+        if timeline_raw:
+            puuid = summoner["puuid"]
+            pid = get_participant_id_from_match(sel["match_obj"], puuid)
+            enemy_pid = get_enemy_participant_id_from_match(sel["match_obj"], puuid)
+            if pid:
+                tl_parsed = parse_timeline(timeline_raw, pid, enemy_pid)
+
+    if tl_parsed:
+        replay_checkpoints = build_replay_checkpoints(tl_parsed)
+        gd_curve = list(tl_parsed["gold_diff_by_minute"].values())[:20]
+        death_times = ", ".join(format_minute(m) for m in tl_parsed.get("death_minutes", [])) or "none"
+        core_items = ", ".join(
+            f"{event['item_id']} at {format_minute(event['minute'])}"
+            for event in tl_parsed.get("core_item_minutes", [])
+        ) or "none"
+        objectives = ", ".join(
+            f"{event['type']} at {format_minute(event['minute'])}"
+            for event in tl_parsed.get("objective_events", [])
+        ) or "none"
+        timeline_data_str = (
+            f"CS at 10 min: {tl_parsed['cs_at_10']} (enemy: {tl_parsed['enemy_cs_at_10']}, "
+            f"diff: {tl_parsed['cs_at_10'] - tl_parsed['enemy_cs_at_10']:+d})\n"
+            f"CS at 15 min: {tl_parsed['cs_at_15']} (enemy: {tl_parsed['enemy_cs_at_15']})\n"
+            f"First death: minute {tl_parsed['first_death_minute']} ({classify_first_death(tl_parsed['first_death_minute'])})\n"
+            f"All player death timestamps: {death_times}\n"
+            f"First core item: minute {tl_parsed['first_item_minute']} (Challenger avg: {CHALL_AVG_ITEM_MIN} min)\n"
+            f"Core item purchase timestamps: {core_items}\n"
+            f"Objective timestamps: {objectives}\n"
+            f"Gold diff curve (min 0-{len(gd_curve)-1}): {gd_curve}\n"
+        )
 
     data_quality = build_data_quality(sel, tl_parsed)
 
@@ -1495,6 +1538,14 @@ with left_col:
     death_info = {}
     if timeline_raw and summoner:
         death_info = analyze_deaths(summoner["puuid"], timeline_raw)
+    elif tl_parsed:
+        death_minutes = tl_parsed.get("death_minutes", [])
+        death_info = {
+            "early_deaths": sum(1 for minute in death_minutes if minute < 15),
+            "mid_deaths": sum(1 for minute in death_minutes if 15 <= minute < 25),
+            "late_deaths": sum(1 for minute in death_minutes if minute >= 25),
+            "first_death_minute": tl_parsed.get("first_death_minute"),
+        }
 
     early_deaths = death_info.get("early_deaths", "N/A")
     mid_deaths   = death_info.get("mid_deaths",   "N/A")

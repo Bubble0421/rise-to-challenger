@@ -48,6 +48,12 @@ cp .env.example .env
 
 Edit `.env` and add your Riot API key.
 
+If you only want the public portfolio flow, you can skip the Riot key and enable Demo Mode instead:
+
+```bash
+echo "PUBLIC_DEMO_MODE=true" >> .env
+```
+
 ### 5. Start Ollama
 
 Make sure Ollama is installed on the server, then run:
@@ -89,6 +95,8 @@ If the included notebook prints a proxy URL, use that exact URL.
 ### Riot API says unauthorized
 
 Your Riot development key may have expired. Replace `RIOT_API_KEY` in `.env` with a fresh key.
+
+If you do not need live player lookup, use `PUBLIC_DEMO_MODE=true` and run the app in Demo Mode.
 
 ### AI coach says local model unavailable
 

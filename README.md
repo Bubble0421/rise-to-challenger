@@ -2,12 +2,14 @@
 
 Rise to Challenger is a Streamlit-based League of Legends coaching app. It combines Riot match data, deterministic review logic, retrieval-augmented generation, and a local Ollama model to help players understand the meta, prepare matchups, and review finished games.
 
+This public version also includes a **Demo Mode** for portfolio deployment. Demo Mode uses curated sample matches so the app can be shown without a live Riot API key or large local ranked archives.
+
 ## What the app does
 
 - `Meta Analysis`
   Search champions and inspect Master+ trends such as tier, win rate, pick rate, KDA, and confidence.
 - `Player Review`
-  Load a summoner's recent matches from Riot API, compare one match against Challenger benchmarks, and generate an AI coach report with replay checkpoints and follow-up chat.
+  Review either curated sample matches or live Riot matches, compare one game against Challenger benchmarks, and generate an AI coach report with replay checkpoints and follow-up chat.
 - `Counter Guide`
   Build a pre-game matchup plan with lane, mid-game, late-game, and item guidance.
 
@@ -15,9 +17,18 @@ Rise to Challenger is a Streamlit-based League of Legends coaching app. It combi
 
 This GitHub version is trimmed for public sharing.
 
-Large offline ranked datasets are not included in the repository because they exceed practical GitHub limits and make the project unnecessarily heavy to clone. The app can still run, but `Meta Analysis` and `Counter Guide` need locally collected offline data for their full experience.
+Large offline ranked datasets are not included in the repository because they exceed practical GitHub limits and make the project unnecessarily heavy to clone. The app can still run in **Demo Mode** without them, and you can rebuild the larger local datasets for full offline analysis.
 
 See [data/README.md](data/README.md) for rebuilding those files locally.
+
+## Demo Mode vs Live Mode
+
+- `Demo Mode`
+  Uses curated sample matches and timeline fixtures. Best for public GitHub links and Streamlit deployments.
+- `Live Mode`
+  Uses Riot API lookups for real player review. Best for local development and private demos.
+
+Set `PUBLIC_DEMO_MODE=true` in your deployment environment if you want the app to default to Demo Mode.
 
 ## Tech stack
 

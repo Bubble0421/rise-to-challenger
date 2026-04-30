@@ -8,6 +8,7 @@ from api import PATCH, DATA_PATCH_LABEL, champion_icon_url, item_icon_url, get_i
 from services.confidence_service import get_confidence_label, get_confidence_color
 from services.counter_plan_service import LOW_VALUE_ITEM_NAMES, build_counter_plan
 from utils.agents import run_counter_agents
+from utils.demo_mode import get_demo_matches, public_demo_default
 from utils.data import load_rank_matches
 from utils.styles import inject_css, chart_layout, GOLD, WIN_COLOR, LOSS_COLOR, render_sidebar, render_page_header, render_section_header
 
@@ -126,17 +127,21 @@ all_champions = get_champion_list()
 offline_matches = load_matches()
 
 if not offline_matches or not all_champions:
-    render_page_header("COUNTER GUIDE", "Master+ matchup data · 30-second pre-game guide")
-    st.warning("Offline matchup datasets are not available in this environment.")
-    st.info(
-        "To use Counter Guide fully, collect local ranked data with `python scripts/collect_data.py`, "
-        "then reload the app."
-    )
-    st.stop()
+    offline_matches = get_demo_matches()
+    st.info("Public demo fallback is active. Counter Guide is using curated sample matchups instead of local ranked datasets.")
+    if not all_champions:
+        champs = set()
+        for match in offline_matches:
+            for participant in match.get("info", {}).get("participants", []):
+                if participant.get("teamPosition"):
+                    champs.add(participant["championName"])
+        all_champions = sorted(champs)
 
 # ─── Page Header ──────────────────────────────────────────────────────────────
 
 render_page_header("COUNTER GUIDE", "Master+ matchup data · 30-second pre-game guide")
+if public_demo_default():
+    st.caption("Demo Mode keeps this page deployable without local match archives. Live/offline ranked data can still be used locally.")
 
 # ─── Champion Selectors ───────────────────────────────────────────────────────
 

@@ -1,0 +1,15 @@
+streamlit==1.56.0
+pandas==3.0.2
+plotly==6.6.0
+requests==2.33.1
+riotwatcher==3.3.1
+ollama==0.6.1
+langchain-ollama==1.0.1
+langchain-core==1.2.24
+langchain-classic==1.0.3
+langchain-community>=0.3.0
+langgraph==1.1.4
+chromadb>=0.5.0
+youtube-transcript-api>=0.6.0
+python-dotenv>=1.0.0
+pytest>=8.0.0

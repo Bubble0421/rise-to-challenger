@@ -1,0 +1,76 @@
+"""Backward-compatible facade for Riot and Data Dragon helpers.
+
+New code should prefer importing from `core.config`, `integrations.riot_client`,
+and `integrations.ddragon_client`. This module keeps existing pages and scripts
+working while the app is migrated incrementally.
+"""
+from core.config import DATA_PATCH_LABEL, PATCH, QUEUE_TYPE, REGION, REGIONAL
+from integrations.ddragon_client import (
+    champion_icon_url,
+    ddragon_id as _ddragon_id,
+    get_item_name,
+    get_item_names,
+    item_icon_url,
+    profile_icon_url,
+    rank_icon_url,
+)
+from integrations.riot_client import (
+    analyze_deaths,
+    get_challenger_avg,
+    get_challenger_list,
+    get_diamond_sample,
+    get_emerald_sample,
+    get_enemy_participant_id_from_match,
+    get_gold_sample,
+    get_grandmaster_list,
+    get_league_entries_page,
+    get_league_info,
+    get_master_list,
+    get_match_detail,
+    get_match_ids,
+    get_participant_id_from_match,
+    get_platinum_sample,
+    get_sampled_tier_entries,
+    get_summoner,
+    get_timeline,
+    parse_all_matches,
+    parse_player_match,
+    watcher,
+)
+
+
+__all__ = [
+    "DATA_PATCH_LABEL",
+    "PATCH",
+    "QUEUE_TYPE",
+    "REGION",
+    "REGIONAL",
+    "_ddragon_id",
+    "analyze_deaths",
+    "champion_icon_url",
+    "get_challenger_avg",
+    "get_challenger_list",
+    "get_diamond_sample",
+    "get_emerald_sample",
+    "get_enemy_participant_id_from_match",
+    "get_gold_sample",
+    "get_grandmaster_list",
+    "get_item_name",
+    "get_item_names",
+    "get_league_entries_page",
+    "get_league_info",
+    "get_master_list",
+    "get_match_detail",
+    "get_match_ids",
+    "get_participant_id_from_match",
+    "get_platinum_sample",
+    "get_sampled_tier_entries",
+    "get_summoner",
+    "get_timeline",
+    "item_icon_url",
+    "parse_all_matches",
+    "parse_player_match",
+    "profile_icon_url",
+    "rank_icon_url",
+    "watcher",
+]

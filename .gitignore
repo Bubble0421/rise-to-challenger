@@ -1,0 +1,25 @@
+.env
+.venv/
+.claude/
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.zip
+.ipynb_checkpoints/
+.streamlit/secrets.toml
+streamlit.log
+*.log
+
+# Generated runtime artifacts
+logs/
+data/chromadb/
+rise_to_challenger.zip
+data/challenger_matches.json
+data/grandmaster_matches.json
+data/master_matches.json
+data/diamond_matches.json
+data/emerald_matches.json
+data/platinum_matches.json
+data/gold_matches.json
+data/meta_cache.json

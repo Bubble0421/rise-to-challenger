@@ -1,0 +1,140 @@
+{
+  "Seraphine": [
+    {
+      "phase": "lane",
+      "text": "Use E proactively to help allies dodge skillshots and extend trades; save W for real all-ins, not light poke."
+    },
+    {
+      "phase": "mid_game",
+      "enemy_tags": ["engage"],
+      "text": "Move with teammates before objectives; Seraphine is strong setting river vision but weak face-checking fog alone."
+    },
+    {
+      "phase": "teamfight",
+      "enemy_tags": ["engage", "burst"],
+      "text": "Hold W for the first committed dive, then kite backward with shields, speed, and healing."
+    },
+    {
+      "phase": "teamfight",
+      "item_tags": ["locket"],
+      "enemy_tags": ["engage", "burst"],
+      "text": "Locket fits this fight pattern: absorb first contact, then double-W to reset spacing."
+    },
+    {
+      "phase": "win_condition",
+      "text": "Stand behind allies to extend R through the frontline; Seraphine wins by chaining range, not by starting fights alone."
+    }
+  ],
+  "Jinx": [
+    {
+      "phase": "lane",
+      "text": "Use rockets to farm and poke from range; avoid extended trades before support or jungle pressure arrives."
+    },
+    {
+      "phase": "mid_game",
+      "text": "Rotate after bot wave is cleared; Jinx loses tempo when she moves before catching the wave."
+    },
+    {
+      "phase": "teamfight",
+      "enemy_tags": ["engage", "burst"],
+      "text": "Front-to-back only: hit nearest target, preserve Flash, and chase after the first passive reset."
+    },
+    {
+      "phase": "win_condition",
+      "text": "One kill or assist changes the fight; play for reset cleanup instead of forcing first contact."
+    }
+  ],
+  "Caitlyn": [
+    {
+      "phase": "lane",
+      "text": "Use range to control the first three waves; trap under CC or dash landing spots before trading."
+    },
+    {
+      "phase": "mid_game",
+      "text": "Set traps before dragon or tower sieges; Caitlyn controls space before fights, not after they start."
+    },
+    {
+      "phase": "teamfight",
+      "text": "Fight around trap zones and headshot windows; do not walk into melee range for extra autos."
+    },
+    {
+      "phase": "win_condition",
+      "text": "Convert lane priority into plates and objective setup before enemy scaling carries reach two items."
+    }
+  ],
+  "Ezreal": [
+    {
+      "phase": "lane",
+      "text": "Stack passive with Q before trading; missing Q removes most of Ezreal's lane pressure."
+    },
+    {
+      "phase": "mid_game",
+      "text": "Poke before objectives from fog or river angles; Ezreal should lower HP bars before committing."
+    },
+    {
+      "phase": "teamfight",
+      "enemy_tags": ["engage"],
+      "text": "Hold E until the engage spell is committed; using it forward gives divers a free target."
+    },
+    {
+      "phase": "win_condition",
+      "text": "Win through safe poke, item spikes, and low-death uptime rather than short-range DPS races."
+    }
+  ],
+  "Lux": [
+    {
+      "phase": "lane",
+      "text": "Trade after E slow or support CC; fishing blind Q without wave control gives up pressure."
+    },
+    {
+      "phase": "mid_game",
+      "text": "Control river entrances with E and Q; Lux is strongest before enemies can force melee range."
+    },
+    {
+      "phase": "teamfight",
+      "enemy_tags": ["engage", "burst"],
+      "text": "Hold Q for the first diver instead of using it as poke when engage threats are missing."
+    },
+    {
+      "phase": "win_condition",
+      "text": "Win by chunking carries before objectives, then converting one binding into a pick."
+    }
+  ],
+  "Nautilus": [
+    {
+      "phase": "lane",
+      "text": "Threaten brush hooks at level 2; Nautilus creates pressure by making enemies respect fog."
+    },
+    {
+      "phase": "mid_game",
+      "text": "Roam first when bot wave is pushed; your point-click CC turns river fights into picks."
+    },
+    {
+      "phase": "teamfight",
+      "text": "Ult the carry or key follow-up target, not the nearest tank, unless peeling is mandatory."
+    },
+    {
+      "phase": "win_condition",
+      "text": "Force decisive fights before poke comps can lower your team's HP bars."
+    }
+  ],
+  "Lulu": [
+    {
+      "phase": "lane",
+      "text": "Use W on the enemy carry during all-ins; polymorph often prevents more damage than shielding first."
+    },
+    {
+      "phase": "mid_game",
+      "text": "Stay connected to the fed carry; Lulu loses value when she shadows low-impact side lanes."
+    },
+    {
+      "phase": "teamfight",
+      "enemy_tags": ["engage", "burst"],
+      "text": "Save R and W for the first diver; your job is denying the burst window, not starting the fight."
+    },
+    {
+      "phase": "win_condition",
+      "text": "Keep the primary DPS alive through the first engage, then speed them forward after cooldowns are spent."
+    }
+  ]
+}

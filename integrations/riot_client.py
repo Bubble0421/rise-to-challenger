@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import random
+from functools import lru_cache
 
 import pandas as pd
 import requests
@@ -12,7 +13,14 @@ from core.config import QUEUE_RANKED_SOLO, QUEUE_TYPE, REGION, REGIONAL, RIOT_AP
 from integrations.ddragon_client import champion_icon_url, item_icon_url
 
 
-watcher = LolWatcher(RIOT_API_KEY)
+watcher = None
+
+
+@lru_cache(maxsize=1)
+def get_watcher():
+    if not RIOT_API_KEY:
+        raise ValueError("RIOT_API_KEY is not set. Live Riot API features are unavailable.")
+    return LolWatcher(RIOT_API_KEY)
 
 
 @st.cache_data(ttl=300)
@@ -22,7 +30,7 @@ def get_summoner(game_name: str, tag_line: str):
         resp = requests.get(url, headers={"X-Riot-Token": RIOT_API_KEY})
         resp.raise_for_status()
         account = resp.json()
-        summoner = watcher.summoner.by_puuid(REGION, account["puuid"])
+        summoner = get_watcher().summoner.by_puuid(REGION, account["puuid"])
         summoner["puuid"] = account["puuid"]
         summoner["gameName"] = game_name
         summoner["tagLine"] = tag_line
@@ -48,20 +56,26 @@ def get_league_info(puuid: str):
 @st.cache_data(ttl=300)
 def get_match_ids(puuid: str, count: int = 10):
     try:
-        return watcher.match.matchlist_by_puuid(
+        return get_watcher().match.matchlist_by_puuid(
             REGIONAL, puuid, count=count, queue=QUEUE_RANKED_SOLO
         )
     except ApiError as e:
         st.error(f"Match history error: {e}")
+        return []
+    except Exception as e:
+        st.error(f"Match history unavailable: {e}")
         return []
 
 
 @st.cache_data(ttl=300)
 def get_match_detail(match_id: str):
     try:
-        return watcher.match.by_id(REGIONAL, match_id)
+        return get_watcher().match.by_id(REGIONAL, match_id)
     except ApiError as e:
         st.error(f"Match detail error: {e}")
+        return None
+    except Exception as e:
+        st.error(f"Match detail unavailable: {e}")
         return None
 
 
@@ -170,28 +184,37 @@ def get_challenger_avg(champion: str, position: str, matches: list) -> dict:
 
 def get_challenger_list():
     try:
-        data = watcher.league.challenger_by_queue(REGION, QUEUE_TYPE)
+        data = get_watcher().league.challenger_by_queue(REGION, QUEUE_TYPE)
         return data.get("entries", [])
     except ApiError as e:
         print(f"Challenger list error: {e}")
+        return []
+    except Exception as e:
+        print(f"Challenger list unavailable: {e}")
         return []
 
 
 def get_grandmaster_list():
     try:
-        data = watcher.league.grandmaster_by_queue(REGION, QUEUE_TYPE)
+        data = get_watcher().league.grandmaster_by_queue(REGION, QUEUE_TYPE)
         return data.get("entries", [])
     except ApiError as e:
         print(f"Grandmaster list error: {e}")
+        return []
+    except Exception as e:
+        print(f"Grandmaster list unavailable: {e}")
         return []
 
 
 def get_master_list():
     try:
-        data = watcher.league.masters_by_queue(REGION, QUEUE_TYPE)
+        data = get_watcher().league.masters_by_queue(REGION, QUEUE_TYPE)
         return data.get("entries", [])
     except ApiError as e:
         print(f"Master list error: {e}")
+        return []
+    except Exception as e:
+        print(f"Master list unavailable: {e}")
         return []
 
 
@@ -278,8 +301,11 @@ def get_gold_sample(sample_size: int = 160):
 @st.cache_data(ttl=300)
 def get_timeline(match_id: str) -> dict | None:
     try:
-        return watcher.match.timeline_by_match(REGIONAL, match_id)
+        return get_watcher().match.timeline_by_match(REGIONAL, match_id)
     except ApiError as e:
+        st.warning(f"Timeline unavailable for {match_id}: {e}")
+        return None
+    except Exception as e:
         st.warning(f"Timeline unavailable for {match_id}: {e}")
         return None
 

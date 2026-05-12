@@ -5,6 +5,7 @@ from pathlib import Path
 
 DATA_DIR = Path("data")
 LEGACY_META_CACHE = DATA_DIR / "meta_cache.json"
+SAMPLE_MATCHES_FILE = DATA_DIR / "sample_matches.json"
 # Ordered from highest to lowest (index = rank level)
 RANK_TIER_ORDER = ["Challenger", "Grandmaster", "Master", "Diamond", "Emerald", "Platinum", "Gold"]
 
@@ -19,13 +20,13 @@ RANK_FILE_MAP = {
 }
 
 def _available_ranks() -> list:
-    """Return only ranks that have a data file on disk (or legacy fallback)."""
+    """Return only ranks that have a data file on disk (or fallback)."""
     available = []
     for rank in RANK_TIER_ORDER:
         path = RANK_FILE_MAP[rank]
         if path.exists():
             available.append(rank)
-        elif rank == "Challenger" and LEGACY_META_CACHE.exists():
+        elif rank == "Challenger" and (LEGACY_META_CACHE.exists() or SAMPLE_MATCHES_FILE.exists()):
             available.append(rank)
     return available
 
@@ -73,6 +74,8 @@ def load_rank_matches(rank_label: str) -> list:
         source = load_json_file(path)
         if not source and rank == "Challenger":
             source = load_json_file(LEGACY_META_CACHE)
+        if not source and rank == "Challenger":
+            source = load_json_file(SAMPLE_MATCHES_FILE)
         for match in source:
             match_id = match.get("metadata", {}).get("matchId")
             if match_id and match_id not in seen_ids:

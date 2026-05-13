@@ -9,6 +9,8 @@
 
 **[Try the live demo →](https://rise-to-challenger-m9ykf3u3jo5lhyzcvljcbu.streamlit.app/)**
 
+![AI Coach Report — structured post-game analysis benchmarked against Challenger](screenshots/ai_coach_report.png)
+
 Rise to Challenger is a Streamlit-based League of Legends coaching app. It combines Riot match data, deterministic review logic, retrieval-augmented generation, and a local Ollama model to help players understand the meta, prepare matchups, and review finished games.
 
 ## What the app does
@@ -19,6 +21,11 @@ Rise to Challenger is a Streamlit-based League of Legends coaching app. It combi
   Search any player, benchmark every stat against Challenger averages, and get a structured AI coach report with replay checkpoints.
 - `Counter Guide`
   Pre-game matchup plan with lane, mid-game, late-game, and item guidance — generated from real high-elo data in under 30 seconds.
+
+| | |
+|---|---|
+| ![Execution Scorecard — performance grade vs Challenger benchmarks](screenshots/scorecard.png) | ![Counter Guide — matchup stats and 30-second game plan](screenshots/counter_guide.png) |
+| ![Meta Analysis — champion tier list from Master+ data](screenshots/meta_analysis.png) | ![Player Review — match history and Challenger benchmarks](screenshots/player_review.png) |
 
 ## Quick start (no API key needed)
 

@@ -1,34 +1,42 @@
 # Rise to Challenger
 
-Rise to Challenger is a Streamlit-based League of Legends coaching app. It combines Riot match data, deterministic review logic, retrieval-augmented generation, and a local Ollama model to help players understand the meta, prepare matchups, and review finished games.
+> AI-powered League of Legends coaching — meta trends, post-game review, and counter guides powered by Master+ match data.
 
-This public version also includes a **Demo Mode** for portfolio deployment. Demo Mode uses curated sample matches so the app can be shown without a live Riot API key or large local ranked archives.
+[![Live Demo](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://rise-to-challenger-m9ykf3u3jo5lhyzcvljcbu.streamlit.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://python.org)
+[![LangGraph](https://img.shields.io/badge/LangGraph-multi--agent-green.svg)](https://github.com/langchain-ai/langgraph)
+
+**[Try the live demo →](https://rise-to-challenger-m9ykf3u3jo5lhyzcvljcbu.streamlit.app/)**
+
+Rise to Challenger is a Streamlit-based League of Legends coaching app. It combines Riot match data, deterministic review logic, retrieval-augmented generation, and a local Ollama model to help players understand the meta, prepare matchups, and review finished games.
 
 ## What the app does
 
 - `Meta Analysis`
-  Search champions and inspect Master+ trends such as tier, win rate, pick rate, KDA, and confidence.
+  Champion tier list and hidden OP picks from 900+ Master+ matches. Filter by role, see win rate, pick rate, KDA, and confidence score.
 - `Player Review`
-  Review either curated sample matches or live Riot matches, compare one game against Challenger benchmarks, and generate an AI coach report with replay checkpoints and follow-up chat.
+  Search any player, benchmark every stat against Challenger averages, and get a structured AI coach report with replay checkpoints.
 - `Counter Guide`
-  Build a pre-game matchup plan with lane, mid-game, late-game, and item guidance.
+  Pre-game matchup plan with lane, mid-game, late-game, and item guidance — generated from real high-elo data in under 30 seconds.
 
-## Public repo note
+## Quick start (no API key needed)
 
-This GitHub version is trimmed for public sharing.
+The live demo runs entirely in Demo Mode — no Riot API key, no local setup required.
 
-Large offline ranked datasets are not included in the repository because they exceed practical GitHub limits and make the project unnecessarily heavy to clone. The app can still run in **Demo Mode** without them, and you can rebuild the larger local datasets for full offline analysis.
-
-See [data/README.md](data/README.md) for rebuilding those files locally.
+**[Open the demo](https://rise-to-challenger-m9ykf3u3jo5lhyzcvljcbu.streamlit.app/)** and try:
+1. **Meta Analysis** — search any champion, filter by role
+2. **Player Review** → select Demo Mode → pick a match → generate AI coach report
+3. **Counter Guide** — pick your champion and enemy, get a full game plan
 
 ## Demo Mode vs Live Mode
 
 - `Demo Mode`
-  Uses curated sample matches and timeline fixtures. Best for public GitHub links and Streamlit deployments.
+  Uses curated sample matches and timeline fixtures. Works instantly in the browser.
 - `Live Mode`
-  Uses Riot API lookups for real player review. Best for local development and private demos.
+  Uses Riot API lookups for real player review. Best for local development.
 
-Set `PUBLIC_DEMO_MODE=true` in your deployment environment if you want the app to default to Demo Mode.
+Set `PUBLIC_DEMO_MODE=true` in your deployment environment to default to Demo Mode.
 
 ## Tech stack
 
@@ -111,39 +119,8 @@ python scripts/build_rag.py
 streamlit run app.py
 ```
 
-## JupyterLab deployment
-
-This project already includes a notebook launcher:
-
-- `Launch_Dashboard.ipynb`
-
-If you want a step-by-step text guide, see:
-
-- [JUPYTERLAB_DEPLOY.md](JUPYTERLAB_DEPLOY.md)
-
-## GitHub publishing checklist
-
-Before pushing this project publicly:
-
-1. Make sure `.env` is not committed.
-2. Do not commit `data/chromadb/`, `rise_to_challenger.zip`, logs, or local cache files.
-3. Refresh the Riot API key locally after pushing if you ever pasted a real key into a notebook or config file.
-4. Keep large generated artifacts out of the repo.
-
-## Suggested GitHub repo setup
-
-```bash
-git init
-git add .
-git commit -m "Initial public release of Rise to Challenger"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo>.git
-git push -u origin main
-```
-
 ## Notes
 
-- `Meta Analysis` and `Counter Guide` need local offline data files for full functionality.
-- `Player Review` needs a valid Riot API key for live summoner and match lookup.
-- AI outputs degrade gracefully if Ollama or the RAG index is unavailable.
-- The architecture PDF is included because it is part of the project presentation and system explanation.
+- The live demo uses a 900-match sample dataset. Full local builds use 10,000+ Master+ matches.
+- AI coach reports require a local Ollama instance (`gemma2:2b`). The demo falls back to deterministic rule-based analysis when Ollama is unavailable.
+- The architecture PDF (`LoL_Architecture.pdf`) is included as a system design reference.

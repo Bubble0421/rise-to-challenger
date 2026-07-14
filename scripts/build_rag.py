@@ -9,7 +9,10 @@ Usage:
 
 What it does:
   1. Loads all offline JSON match files (Challenger / Grandmaster / Master)
-  2. Converts each participant into a text summary and embeds it into ChromaDB
+  2. Converts each participant into a BEHAVIORAL NARRATIVE (what they did — lane
+     dominance, roams, objective conversion, death discipline) and embeds it into
+     ChromaDB. See scripts/build_narratives.py for the committed keyword-fallback
+     corpus used when no embedding model is available.
   3. Optionally fetches YouTube transcripts for the top champions
 
 Requirements:

@@ -82,6 +82,7 @@ class AICoachState(TypedDict, total=False):
     reflection_feedback: str
     passed_reflection: bool
     repair_count: int
+    routing_query: str
 
 STRATEGIC_PROMPT = """\
 You are a Diamond+ League of Legends positional coach reviewing a ranked match.
@@ -385,9 +386,12 @@ def _search_counter_context(your_champ: str, your_pos: str, enemy_champ: str) ->
     return context, sources
 
 
-def _search_review_context(champion: str, position: str, coach_context: str, match_data: str) -> tuple[str, list[str]]:
+def _search_review_context(champion: str, position: str, coach_context: str, match_data: str, behavior_query: str = "") -> tuple[str, list[str]]:
+    # The Orchestrator hands us a behavioral query targeting the routed gap, so
+    # retrieval looks for what Challengers DID about this problem, not averages.
+    primary = behavior_query or f"Challenger {champion} {position} how they controlled deaths, set up objectives, and played fights"
     queries = [
-        (f"Challenger {champion} {position} post game review deaths damage vision objective setup", CHALLENGER_COLLECTION, 3),
+        (primary, CHALLENGER_COLLECTION, 3),
         (f"{champion} {position} guide teamfight lane objective coaching", YOUTUBE_COLLECTION, 2),
     ]
     docs: list[dict] = []
@@ -561,6 +565,7 @@ def _retrieve_ai_coach_context(state: AICoachState) -> AICoachState:
         state.get("position", ""),
         state.get("coach_context", ""),
         state.get("match_data", ""),
+        behavior_query=state.get("routing_query", ""),
     )
     return {"rag_context": rag_context, "sources": sources, "repair_count": state.get("repair_count", 0)}
 
@@ -828,14 +833,20 @@ def run_ai_coach_report_agent(
     timeline_data: str,
     champion: str = "",
     position: str = "",
+    routing_query: str = "",
 ) -> tuple[str, list[str]]:
-    """Generate a personalized AI coach report with RAG and reflection guards."""
+    """Generate a personalized AI coach report with RAG and reflection guards.
+
+    ``routing_query`` is the Orchestrator's behavioral retrieval query; it steers
+    RAG toward what Challengers did about the routed gap instead of generic stats.
+    """
     state: AICoachState = {
         "coach_context": coach_context,
         "match_data": match_data,
         "timeline_data": timeline_data,
         "champion": champion,
         "position": position,
+        "routing_query": routing_query,
         "repair_count": 0,
     }
     try:

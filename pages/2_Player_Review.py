@@ -31,6 +31,7 @@ from services.champion_rule_service import (
     has_item_tag,
 )
 from services.execution_service import compute_chall_targets, compute_scorecard, compute_grade, get_top_gaps
+from services.routing_service import Orchestrator
 from services.rune_service import evaluate_runes
 from features.player_review.benchmarks import (
     dataset_for_tier,
@@ -57,6 +58,7 @@ from utils.timeline import (
     format_minute,
 )
 from utils.agents import run_ai_coach_report_agent
+from utils.rag import search_rag
 
 st.set_page_config(page_title="Rise to Challenger", page_icon="⚔", layout="wide", initial_sidebar_state="expanded")
 inject_css()
@@ -617,6 +619,76 @@ def render_coach_final_review(cards: list[tuple[str, str, str, str]]):
         )
     st.markdown(
         f"<div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;'>{cards_html}</div>",
+        unsafe_allow_html=True,
+    )
+
+
+def render_analysis_plan(plan):
+    """Render the Orchestrator's routing decision so the user sees WHY this
+    review took the path it did — not just what the numbers were."""
+    mode_color = {
+        "diagnose":  RED_COLOR,
+        "reinforce": GREEN_COLOR,
+        "degraded":  GOLD_COLOR,
+    }.get(plan.mode, GOLD_COLOR)
+
+    dispatched = " · ".join(plan.agents)
+    skipped_html = (
+        f"<br>Skipped: {' · '.join(plan.skipped)}" if plan.skipped else ""
+    )
+    depth_html = ""
+    if plan.depth:
+        depth_str = " · ".join(f"{k}: {v}" for k, v in plan.depth.items())
+        depth_html = f"<br>Depth: {depth_str}"
+    unavailable_html = (
+        f"<br>⚠ Unavailable data: {' · '.join(plan.unavailable)}"
+        if plan.unavailable else ""
+    )
+
+    render_section_header("ANALYSIS PLAN")
+    st.markdown(
+        f"<div style='background:#0A1428;border:1px solid #1E2D40;border-left:3px solid {mode_color};"
+        f"border-radius:4px;padding:16px 20px;margin-bottom:14px;'>"
+        f"<div style='font-size:10px;color:{mode_color};text-transform:uppercase;"
+        f"letter-spacing:2px;font-weight:700;margin-bottom:10px;'>MODE · {plan.mode.upper()}</div>"
+        f"<div style='font-size:13px;color:#F0E6D3;line-height:1.7;'>{plan.rationale}</div>"
+        f"<div style='font-size:10px;color:#A0A0A0;margin-top:12px;line-height:1.8;'>"
+        f"Agents dispatched: {dispatched}{skipped_html}{depth_html}{unavailable_html}</div>"
+        f"</div>",
+        unsafe_allow_html=True,
+    )
+
+
+def render_behavior_examples(query: str, champion: str):
+    """Show the behavioral narratives RAG retrieved for the routed gap. This is
+    the point of the RAG rewrite made visible: what Challenger players *did* in a
+    comparable spot, not the averages the scorecard above already reports."""
+    try:
+        hits = search_rag(query, k=3)
+    except Exception:
+        hits = []
+    if not hits:
+        return
+
+    items_html = ""
+    for h in hits:
+        champ = h.get("champion", "")
+        badge = (
+            f"<span style='color:{GOLD_COLOR};font-weight:700;'>{champ}</span> · "
+            if champ else ""
+        )
+        items_html += (
+            f"<div style='padding:10px 0;border-top:1px solid #1E2D40;'>"
+            f"<div style='font-size:13px;color:#F0E6D3;line-height:1.6;'>{badge}{h.get('content','')}</div>"
+            f"</div>"
+        )
+    st.markdown(
+        f"<div style='background:#0A1428;border:1px solid #1E2D40;border-left:3px solid {CYAN_COLOR};"
+        f"border-radius:4px;padding:14px 20px;margin-bottom:14px;'>"
+        f"<div style='font-size:10px;color:{CYAN_COLOR};text-transform:uppercase;letter-spacing:2px;"
+        f"font-weight:700;'>HOW CHALLENGERS PLAYED THIS SPOT</div>"
+        f"<div style='font-size:11px;color:#785A28;margin-top:2px;'>Behavioral retrieval · not average stats</div>"
+        f"{items_html}</div>",
         unsafe_allow_html=True,
     )
 
@@ -1219,6 +1291,19 @@ with left_col:
 
     st.divider()
 
+    # ─── Orchestrator: route this match to an analysis plan (a real decision) ─────
+    _plan = Orchestrator().route(
+        scorecard_rows=_score_rows,
+        champion=sel["champion"],
+        position=POSITION_MAP.get(sel["position"], sel["position"]),
+        win=sel["win"],
+        timeline=tl_parsed,
+    )
+    render_analysis_plan(_plan)
+    render_behavior_examples(_plan.rag_query, sel["champion"])
+
+    st.divider()
+
     # ─── Section 3: Runes & Spells ────────────────────────────────────────────────
     render_section_header("RUNES & SPELLS")
     _rune_eval = evaluate_runes(
@@ -1811,6 +1896,8 @@ Note: {vision_note}
             f"Match Metrics: {metric_packet}",
             f"Data Health: {data_health_packet}",
             f"Replay Checkpoints: {checkpoint_packet}",
+            f"Analysis Mode: {_plan.mode}",
+            f"Routing Directive: {_plan.focus}",
         ]
     )
     st.divider()
@@ -1901,6 +1988,7 @@ Note: {vision_note}
                     timeline_data=timeline_data_str or "No timeline data.",
                     champion=sel["champion"],
                     position=POSITION_MAP.get(sel["position"], sel["position"]),
+                    routing_query=_plan.rag_query,
                 )
                 st.session_state[ai_coach_key] = report
                 st.session_state[ai_coach_sources_key] = sources

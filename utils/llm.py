@@ -103,17 +103,28 @@ Rules:
 - Do not say "based on the information provided".
 - Keep the full answer under 120 words.
 """
-        try:
-            import ollama
+        # Backend 1: cloud API (works on Streamlit Cloud — set OPENAI_API_KEY in secrets)
+        from utils.cloud_llm import api_generate
 
-            response = ollama.generate(
-                model=CHAT_MODEL,
-                prompt=prompt,
-                options={"temperature": 0.2, "top_p": 0.9},
-            )
-            answer = response.get("response", "").strip()
-        except Exception as exc:
-            answer = _fallback_answer(self.context, input) + f"\n\nNote: local AI unavailable ({exc})."
+        answer = api_generate(prompt, temperature=0.2, max_tokens=400) or ""
+
+        if not answer:
+            # Backend 2: local Ollama
+            try:
+                import ollama
+
+                response = ollama.generate(
+                    model=CHAT_MODEL,
+                    prompt=prompt,
+                    options={"temperature": 0.2, "top_p": 0.9},
+                )
+                answer = response.get("response", "").strip()
+            except Exception:
+                # Backend 3: deterministic fallback — user-facing note, no dev error text
+                answer = _fallback_answer(self.context, input) + (
+                    "\n\n_Coach chat is running in rule-based mode — "
+                    "answers are grounded in this match's review data._"
+                )
         self.history.append((input, answer))
         return answer
 

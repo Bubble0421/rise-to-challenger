@@ -4,6 +4,7 @@ plotly==6.6.0
 requests==2.33.1
 riotwatcher==3.3.1
 ollama==0.6.1
+openai>=1.40.0
 langchain-ollama==1.0.1
 langchain-core==1.2.24
 langchain-classic==1.0.3

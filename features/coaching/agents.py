@@ -322,6 +322,14 @@ Rules:
 
 
 def _llm(prompt: str) -> str:
+    # Backend 1: cloud API (works on Streamlit Cloud — set OPENAI_API_KEY in secrets)
+    from utils.cloud_llm import api_generate
+
+    api_text = api_generate(prompt, temperature=0.2, max_tokens=900)
+    if api_text:
+        return api_text
+
+    # Backend 2: local Ollama
     try:
         import ollama
 

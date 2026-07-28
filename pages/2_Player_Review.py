@@ -1762,7 +1762,10 @@ Note: {vision_note}
 
     _reliable_rows = [r for r in _score_rows if r.get("reliable", True)]
     _severe_gaps = [r for r in _reliable_rows if r["score"] < 0.5]
-    _primary_gap = _training_gaps[0] if _training_gaps else (_top_gaps[0] if _top_gaps else None)
+    # Only a metric genuinely BELOW benchmark can be a primary failure. A clean
+    # game must NOT fall back to the weakest above-average metric — that
+    # manufactures a contradiction ("failure ... above average").
+    _primary_gap = _training_gaps[0] if _training_gaps else None
     _primary_failure_text = format_primary_failure(_primary_gap)
     _positive_rows = [
         r for r in _reliable_rows

@@ -256,7 +256,7 @@ Internal orchestration:
 Output exactly these sections:
 
 COACH READ
-[One short paragraph: state the PRIMARY FAILURE directly, using the exact metric from coach facts when available. Do not say "several areas" unless you name the one review anchor first.]
+[One short paragraph. If coach facts contain a real Primary Failure, state it directly using the exact metric. If coach facts say "No single primary failure detected", this was a clean game: name the strongest winning pattern and the exact condition to repeat it — do NOT invent a failure.]
 
 WHAT YOU DID RIGHT
 [Name one positive signal from the match facts. Explain why it matters without distracting from the primary failure.]
@@ -273,7 +273,9 @@ PRACTICE ASSIGNMENT
 
 Rules:
 - The coach engine facts are authoritative; do not contradict them.
-- If coach facts include "Primary Failure", use it as the center of the report.
+- If coach facts include a real "Primary Failure", use it as the center of the report.
+- If Primary Failure says "No single primary failure detected", never call any metric a failure or weakness — especially not one that is above the Challenger average. Reinforce instead.
+- If a timeline event (first death, first recall) is Unknown or missing, do not write a TURNING POINT around it. Anchor turning points on known scoreboard evidence, or state plainly that timeline data is unavailable for that event.
 - If coach facts include "Positive Signal", use it in WHAT YOU DID RIGHT.
 - If data quality is low, say what cannot be proven.
 - Do not diagnose lane from unreliable CS@10.
@@ -314,6 +316,8 @@ Rules:
 - Respect data confidence.
 - Include one positive signal if coach facts provide it.
 - Do not fabricate exact death cause, wave state, voice comms, or objective control.
+- If coach facts say "No single primary failure detected", do not call any metric a failure; reinforce the winning pattern instead.
+- Do not build TURNING POINTS on Unknown timestamps; use known evidence or state timeline data is unavailable.
 - TURNING POINTS must include what happened, why it mattered, and a replay checklist.
 - PRACTICE ASSIGNMENT must be measurable or pass/fail.
 - Avoid vague words like "try", "consider", "usually", and "play safe".

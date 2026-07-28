@@ -334,11 +334,31 @@ def get_demo_timelines() -> dict[str, dict]:
         core_items=[{"minute": 12.9, "item_id": 6672}, {"minute": 18.2, "item_id": 3094}],
         objectives=[{"minute": 6.0, "type": "DRAGON", "sub_type": "CLOUD", "killer_id": 2}, {"minute": 21.1, "type": "DRAGON", "sub_type": "HEXTECH", "killer_id": 2}],
     )
+    # Lux win (10/2/9, 30.6 min): clean mid game — timeline supports the
+    # reinforce path with real turning-point evidence instead of "Unknown".
+    lux_tl = _timeline(
+        cs_10=82,
+        enemy_cs_10=76,
+        cs_15=124,
+        enemy_cs_15=112,
+        gold_curve={0: 0, 5: 150, 10: 420, 15: 900, 20: 1650, 25: 2400, 30: 3100},
+        first_death=14.3,
+        death_minutes=[14.3, 26.8],
+        death_events=[{"minute": 14.3, "killer_id": 8, "assist_count": 2, "position": {}, "first_blood_candidate": False}],
+        first_item=11.8,
+        core_items=[{"minute": 11.8, "item_id": 6655}, {"minute": 19.4, "item_id": 4628}, {"minute": 25.7, "item_id": 3089}],
+        objectives=[
+            {"minute": 8.2, "type": "DRAGON", "sub_type": "INFERNAL", "killer_id": 2},
+            {"minute": 14.0, "type": "RIFTHERALD", "sub_type": "", "killer_id": 2},
+            {"minute": 24.5, "type": "BARON_NASHOR", "sub_type": "", "killer_id": 2},
+        ],
+    )
     return {
         sera_win["metadata"]["matchId"]: sera_win_tl,
         sera_loss["metadata"]["matchId"]: sera_loss_tl,
         vlad_loss["metadata"]["matchId"]: vlad_loss_tl,
         "DEMO-JINX-001": jinx_tl,
+        "DEMO-LUX-001": lux_tl,
     }
 
 

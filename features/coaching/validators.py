@@ -189,5 +189,11 @@ def judge_ai_coach_output(state: dict) -> tuple[bool, str]:
             issues.append("may blur side-lane carrier and reviewed player role")
     if any(item in text_lower for item in ("luden", "shadowflame")) and any(word in text_lower for word in ("anti-burst", "survivability", "mitigate burst")):
         issues.append("describes offensive damage items as defensive anti-burst tools")
+    if re.search(r"(failure|weakness)[^.\n]{0,90}above (?:the )?(?:challenger )?average", text_lower):
+        issues.append("labels an above-average metric as a failure — contradiction; reinforce instead")
+    if "no single primary failure" in context_lower and "primary failure was" in text_lower:
+        issues.append("invents a primary failure though coach facts say none exists")
+    if "unknown" in turning_points:
+        issues.append("turning points built on Unknown timestamps; use known evidence or state timeline unavailable")
 
     return not issues, "; ".join(issues)

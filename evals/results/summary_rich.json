@@ -1,0 +1,34 @@
+{
+  "n_matches": 19,
+  "draft_contradiction_rate": 0.2631578947368421,
+  "baseline": {
+    "reflection_pass_rate_first": 0.6842105263157895,
+    "reflection_pass_rate_final": 0.7894736842105263,
+    "repair_rate": 0.3157894736842105,
+    "final_contradiction_rate": 0.3157894736842105,
+    "shipped_contradiction_rate": 0.10526315789473684,
+    "fallback_rate": 0.21052631578947367,
+    "latency_repair_p50": 2.91
+  },
+  "v2": {
+    "reflection_pass_rate_first": 0.631578947368421,
+    "reflection_pass_rate_final": 0.8421052631578947,
+    "repair_rate": 0.3684210526315789,
+    "final_contradiction_rate": 0.10526315789473684,
+    "shipped_contradiction_rate": 0.0,
+    "fallback_rate": 0.15789473684210525,
+    "latency_repair_p50": 2.89
+  },
+  "backend": "cloud (gpt-4o-mini)",
+  "content_quality": {
+    "pass_rate": 0.8421052631578947,
+    "avg_match_anchors": 3.42,
+    "template_leak_rate": 0.0,
+    "role_nonsense_rate": 0.10526315789473684,
+    "generic_rate": 0.05263157894736842
+  },
+  "specificity_rate": 1.0,
+  "avg_word_count": 124,
+  "latency_draft_p50": 3.03,
+  "dataset": "rich (full local challenges block)"
+}

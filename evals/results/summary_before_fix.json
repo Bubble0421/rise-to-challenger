@@ -1,0 +1,29 @@
+{
+  "n_matches": 20,
+  "draft_contradiction_rate": 0.3,
+  "baseline": {
+    "reflection_pass_rate_first": 0.5,
+    "reflection_pass_rate_final": 0.5,
+    "repair_rate": 0.5,
+    "final_contradiction_rate": 0.2,
+    "latency_repair_p50": 17.78,
+    "contradiction_detection_rate": 0.0
+  },
+  "v2": {
+    "reflection_pass_rate_first": 0.4,
+    "reflection_pass_rate_final": 0.4,
+    "repair_rate": 0.6,
+    "final_contradiction_rate": 0.2,
+    "latency_repair_p50": 15.91,
+    "contradiction_detection_rate": 1.0
+  },
+  "specificity_rate": 1.0,
+  "avg_word_count": 101,
+  "latency_draft_p50": 18.84,
+  "n_matches_with_real_contradiction": 6,
+  "final_quality_delta_v2_vs_baseline": {
+    "v2_better": 1,
+    "v2_worse": 1,
+    "same": 4
+  }
+}

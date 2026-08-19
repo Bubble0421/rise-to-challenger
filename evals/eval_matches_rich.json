@@ -1,0 +1,1350 @@
+[
+  {
+    "match_id": "NA1_5529473493",
+    "game_duration": 1738,
+    "participant": {
+      "championName": "Jayce",
+      "teamPosition": "TOP",
+      "teamId": 100,
+      "win": false,
+      "kills": 11,
+      "deaths": 6,
+      "assists": 5,
+      "totalMinionsKilled": 233,
+      "neutralMinionsKilled": 12,
+      "totalDamageDealtToChampions": 42010,
+      "visionScore": 22,
+      "totalTimeSpentDead": 244,
+      "wardsPlaced": 9,
+      "wardsKilled": 2,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 80,
+      "maxCsAdvantageOnLaneOpponent": 58,
+      "laningPhaseGoldExpAdvantage": 0,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 2,
+      "turretPlatesTaken": 15,
+      "soloKills": 4,
+      "killsNearEnemyTurret": 2,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.4631089365252378,
+      "damageTakenOnTeamPercentage": 0.18407457829248333,
+      "killParticipation": 0.7619047619047619,
+      "visionScoreAdvantageLaneOpponent": -0.3210870027542114,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 2
+    },
+    "team": [
+      {
+        "teamId": 100,
+        "kills": 11,
+        "totalDamageDealtToChampions": 42010
+      },
+      {
+        "teamId": 100,
+        "kills": 5,
+        "totalDamageDealtToChampions": 12055
+      },
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 17446
+      },
+      {
+        "teamId": 100,
+        "kills": 3,
+        "totalDamageDealtToChampions": 13703
+      },
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 5498
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5528740260",
+    "game_duration": 2257,
+    "participant": {
+      "championName": "Naafiri",
+      "teamPosition": "JUNGLE",
+      "teamId": 100,
+      "win": true,
+      "kills": 12,
+      "deaths": 7,
+      "assists": 17,
+      "totalMinionsKilled": 40,
+      "neutralMinionsKilled": 200,
+      "totalDamageDealtToChampions": 33913,
+      "visionScore": 19,
+      "totalTimeSpentDead": 309,
+      "wardsPlaced": 2,
+      "wardsKilled": 3,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 3,
+      "maxCsAdvantageOnLaneOpponent": 11,
+      "laningPhaseGoldExpAdvantage": 0,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 1,
+      "turretPlatesTaken": 9,
+      "soloKills": 0,
+      "killsNearEnemyTurret": 3,
+      "jungleCsBefore10Minutes": 76.00000008940697,
+      "dragonTakedowns": 1,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 1,
+      "teamDamagePercentage": 0.21046677545232143,
+      "damageTakenOnTeamPercentage": 0.17069743403218993,
+      "killParticipation": 0.7073170731707317,
+      "visionScoreAdvantageLaneOpponent": -0.4000545144081116,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 3
+    },
+    "team": [
+      {
+        "teamId": 100,
+        "kills": 3,
+        "totalDamageDealtToChampions": 24610
+      },
+      {
+        "teamId": 100,
+        "kills": 12,
+        "totalDamageDealtToChampions": 33913
+      },
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 30155
+      },
+      {
+        "teamId": 100,
+        "kills": 15,
+        "totalDamageDealtToChampions": 40935
+      },
+      {
+        "teamId": 100,
+        "kills": 10,
+        "totalDamageDealtToChampions": 31519
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5528725719",
+    "game_duration": 1875,
+    "participant": {
+      "championName": "Mel",
+      "teamPosition": "MIDDLE",
+      "teamId": 100,
+      "win": false,
+      "kills": 6,
+      "deaths": 5,
+      "assists": 7,
+      "totalMinionsKilled": 249,
+      "neutralMinionsKilled": 0,
+      "totalDamageDealtToChampions": 22062,
+      "visionScore": 21,
+      "totalTimeSpentDead": 163,
+      "wardsPlaced": 12,
+      "wardsKilled": 3,
+      "detectorWardsPlaced": 2
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 95,
+      "maxCsAdvantageOnLaneOpponent": 13,
+      "laningPhaseGoldExpAdvantage": 0,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 1,
+      "turretPlatesTaken": 3,
+      "soloKills": 0,
+      "killsNearEnemyTurret": 0,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.262645871422257,
+      "damageTakenOnTeamPercentage": 0.17750806184939388,
+      "killParticipation": 0.65,
+      "visionScoreAdvantageLaneOpponent": -0.3165951371192932,
+      "controlWardsPlaced": 2,
+      "wardTakedowns": 3
+    },
+    "team": [
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 13498
+      },
+      {
+        "teamId": 100,
+        "kills": 6,
+        "totalDamageDealtToChampions": 18351
+      },
+      {
+        "teamId": 100,
+        "kills": 6,
+        "totalDamageDealtToChampions": 22062
+      },
+      {
+        "teamId": 100,
+        "kills": 6,
+        "totalDamageDealtToChampions": 20037
+      },
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 10049
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5529423248",
+    "game_duration": 1700,
+    "participant": {
+      "championName": "Yunara",
+      "teamPosition": "BOTTOM",
+      "teamId": 100,
+      "win": true,
+      "kills": 10,
+      "deaths": 5,
+      "assists": 9,
+      "totalMinionsKilled": 233,
+      "neutralMinionsKilled": 8,
+      "totalDamageDealtToChampions": 36398,
+      "visionScore": 23,
+      "totalTimeSpentDead": 164,
+      "wardsPlaced": 9,
+      "wardsKilled": 4,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 85,
+      "maxCsAdvantageOnLaneOpponent": 33.00000002980232,
+      "laningPhaseGoldExpAdvantage": 0,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 2,
+      "turretPlatesTaken": 12,
+      "soloKills": 2,
+      "killsNearEnemyTurret": 3,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 4,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.32549220759223557,
+      "damageTakenOnTeamPercentage": 0.21131206005048453,
+      "killParticipation": 0.5588235294117647,
+      "visionScoreAdvantageLaneOpponent": 1.8911960124969482,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 4
+    },
+    "team": [
+      {
+        "teamId": 100,
+        "kills": 7,
+        "totalDamageDealtToChampions": 13521
+      },
+      {
+        "teamId": 100,
+        "kills": 8,
+        "totalDamageDealtToChampions": 17180
+      },
+      {
+        "teamId": 100,
+        "kills": 9,
+        "totalDamageDealtToChampions": 39273
+      },
+      {
+        "teamId": 100,
+        "kills": 10,
+        "totalDamageDealtToChampions": 36398
+      },
+      {
+        "teamId": 100,
+        "kills": 0,
+        "totalDamageDealtToChampions": 5452
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5527887847",
+    "game_duration": 1589,
+    "participant": {
+      "championName": "Anivia",
+      "teamPosition": "UTILITY",
+      "teamId": 100,
+      "win": true,
+      "kills": 4,
+      "deaths": 2,
+      "assists": 15,
+      "totalMinionsKilled": 31,
+      "neutralMinionsKilled": 0,
+      "totalDamageDealtToChampions": 9351,
+      "visionScore": 116,
+      "totalTimeSpentDead": 49,
+      "wardsPlaced": 47,
+      "wardsKilled": 13,
+      "detectorWardsPlaced": 9
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 13,
+      "maxCsAdvantageOnLaneOpponent": 2,
+      "laningPhaseGoldExpAdvantage": 1,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 1,
+      "turretPlatesTaken": 11,
+      "soloKills": 0,
+      "killsNearEnemyTurret": 0,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 1,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.11244368034968952,
+      "damageTakenOnTeamPercentage": 0.20801547244794014,
+      "killParticipation": 0.7307692307692307,
+      "visionScoreAdvantageLaneOpponent": 0.21105051040649414,
+      "controlWardsPlaced": 9,
+      "wardTakedowns": 13
+    },
+    "team": [
+      {
+        "teamId": 100,
+        "kills": 3,
+        "totalDamageDealtToChampions": 15874
+      },
+      {
+        "teamId": 100,
+        "kills": 9,
+        "totalDamageDealtToChampions": 18715
+      },
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 17952
+      },
+      {
+        "teamId": 100,
+        "kills": 9,
+        "totalDamageDealtToChampions": 21269
+      },
+      {
+        "teamId": 100,
+        "kills": 4,
+        "totalDamageDealtToChampions": 9351
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5528967907",
+    "game_duration": 1032,
+    "participant": {
+      "championName": "Volibear",
+      "teamPosition": "TOP",
+      "teamId": 200,
+      "win": true,
+      "kills": 3,
+      "deaths": 2,
+      "assists": 2,
+      "totalMinionsKilled": 133,
+      "neutralMinionsKilled": 0,
+      "totalDamageDealtToChampions": 10403,
+      "visionScore": 12,
+      "totalTimeSpentDead": 46,
+      "wardsPlaced": 6,
+      "wardsKilled": 2,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 57,
+      "maxCsAdvantageOnLaneOpponent": 10,
+      "laningPhaseGoldExpAdvantage": 0,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 1,
+      "turretPlatesTaken": 5,
+      "soloKills": 1,
+      "killsNearEnemyTurret": 3,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 1,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.19430934106311676,
+      "damageTakenOnTeamPercentage": 0.283112623233756,
+      "killParticipation": 0.2777777777777778,
+      "visionScoreAdvantageLaneOpponent": 1.439239501953125,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 2
+    },
+    "team": [
+      {
+        "teamId": 200,
+        "kills": 3,
+        "totalDamageDealtToChampions": 10403
+      },
+      {
+        "teamId": 200,
+        "kills": 6,
+        "totalDamageDealtToChampions": 11706
+      },
+      {
+        "teamId": 200,
+        "kills": 4,
+        "totalDamageDealtToChampions": 9498
+      },
+      {
+        "teamId": 200,
+        "kills": 4,
+        "totalDamageDealtToChampions": 13267
+      },
+      {
+        "teamId": 200,
+        "kills": 1,
+        "totalDamageDealtToChampions": 8663
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5528905679",
+    "game_duration": 920,
+    "participant": {
+      "championName": "Gwen",
+      "teamPosition": "JUNGLE",
+      "teamId": 200,
+      "win": false,
+      "kills": 0,
+      "deaths": 5,
+      "assists": 0,
+      "totalMinionsKilled": 12,
+      "neutralMinionsKilled": 79,
+      "totalDamageDealtToChampions": 5092,
+      "visionScore": 7,
+      "totalTimeSpentDead": 112,
+      "wardsPlaced": 1,
+      "wardsKilled": 2,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 6,
+      "maxCsAdvantageOnLaneOpponent": 9.75,
+      "laningPhaseGoldExpAdvantage": 0,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 0,
+      "turretPlatesTaken": 1,
+      "soloKills": 0,
+      "killsNearEnemyTurret": 0,
+      "jungleCsBefore10Minutes": 75.75000008940697,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.1680008132305039,
+      "damageTakenOnTeamPercentage": 0.2983488300715717,
+      "killParticipation": 0,
+      "visionScoreAdvantageLaneOpponent": -0.47933638095855713,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 2
+    },
+    "team": [
+      {
+        "teamId": 200,
+        "kills": 1,
+        "totalDamageDealtToChampions": 9817
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 5092
+      },
+      {
+        "teamId": 200,
+        "kills": 1,
+        "totalDamageDealtToChampions": 7564
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 4449
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 3388
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5528349472",
+    "game_duration": 1670,
+    "participant": {
+      "championName": "Riven",
+      "teamPosition": "MIDDLE",
+      "teamId": 200,
+      "win": false,
+      "kills": 1,
+      "deaths": 6,
+      "assists": 5,
+      "totalMinionsKilled": 240,
+      "neutralMinionsKilled": 0,
+      "totalDamageDealtToChampions": 13946,
+      "visionScore": 18,
+      "totalTimeSpentDead": 137,
+      "wardsPlaced": 10,
+      "wardsKilled": 0,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 67,
+      "maxCsAdvantageOnLaneOpponent": 6.199999988079071,
+      "laningPhaseGoldExpAdvantage": 0,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 1,
+      "turretPlatesTaken": 10,
+      "soloKills": 1,
+      "killsNearEnemyTurret": 0,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.1394678582105025,
+      "damageTakenOnTeamPercentage": 0.20262274192577376,
+      "killParticipation": 0.2727272727272727,
+      "visionScoreAdvantageLaneOpponent": -0.0773230791091919,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 0
+    },
+    "team": [
+      {
+        "teamId": 200,
+        "kills": 3,
+        "totalDamageDealtToChampions": 26553
+      },
+      {
+        "teamId": 200,
+        "kills": 4,
+        "totalDamageDealtToChampions": 10316
+      },
+      {
+        "teamId": 200,
+        "kills": 1,
+        "totalDamageDealtToChampions": 13946
+      },
+      {
+        "teamId": 200,
+        "kills": 12,
+        "totalDamageDealtToChampions": 37083
+      },
+      {
+        "teamId": 200,
+        "kills": 2,
+        "totalDamageDealtToChampions": 12094
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5529163238",
+    "game_duration": 2154,
+    "participant": {
+      "championName": "Zyra",
+      "teamPosition": "BOTTOM",
+      "teamId": 200,
+      "win": true,
+      "kills": 11,
+      "deaths": 7,
+      "assists": 14,
+      "totalMinionsKilled": 285,
+      "neutralMinionsKilled": 6,
+      "totalDamageDealtToChampions": 59108,
+      "visionScore": 23,
+      "totalTimeSpentDead": 276,
+      "wardsPlaced": 12,
+      "wardsKilled": 7,
+      "detectorWardsPlaced": 1
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 64,
+      "maxCsAdvantageOnLaneOpponent": 13,
+      "laningPhaseGoldExpAdvantage": 1,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 2,
+      "turretPlatesTaken": 11,
+      "soloKills": 3,
+      "killsNearEnemyTurret": 5,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 1,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 1,
+      "teamDamagePercentage": 0.3652140295425646,
+      "damageTakenOnTeamPercentage": 0.14392251819495996,
+      "killParticipation": 0.6097560975609756,
+      "visionScoreAdvantageLaneOpponent": -0.23017650842666626,
+      "controlWardsPlaced": 1,
+      "wardTakedowns": 7
+    },
+    "team": [
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 15135
+      },
+      {
+        "teamId": 200,
+        "kills": 17,
+        "totalDamageDealtToChampions": 33858
+      },
+      {
+        "teamId": 200,
+        "kills": 4,
+        "totalDamageDealtToChampions": 31896
+      },
+      {
+        "teamId": 200,
+        "kills": 11,
+        "totalDamageDealtToChampions": 59108
+      },
+      {
+        "teamId": 200,
+        "kills": 9,
+        "totalDamageDealtToChampions": 21848
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5528176029",
+    "game_duration": 96,
+    "participant": {
+      "championName": "Rakan",
+      "teamPosition": "UTILITY",
+      "teamId": 200,
+      "win": true,
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "totalMinionsKilled": 1,
+      "neutralMinionsKilled": 0,
+      "totalDamageDealtToChampions": 196,
+      "visionScore": 0,
+      "totalTimeSpentDead": 0,
+      "wardsPlaced": 1,
+      "wardsKilled": 0,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 1,
+      "turretPlatesTaken": 0,
+      "soloKills": 0,
+      "killsNearEnemyTurret": 0,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.20263274474747245,
+      "damageTakenOnTeamPercentage": 0.15488581979101115,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 0
+    },
+    "team": [
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 204
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 0
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 310
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 258
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 196
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5529344637",
+    "game_duration": 1840,
+    "participant": {
+      "championName": "Jayce",
+      "teamPosition": "TOP",
+      "teamId": 100,
+      "win": true,
+      "kills": 9,
+      "deaths": 4,
+      "assists": 12,
+      "totalMinionsKilled": 259,
+      "neutralMinionsKilled": 3,
+      "totalDamageDealtToChampions": 36054,
+      "visionScore": 17,
+      "totalTimeSpentDead": 156,
+      "wardsPlaced": 9,
+      "wardsKilled": 3,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 92,
+      "maxCsAdvantageOnLaneOpponent": 41,
+      "laningPhaseGoldExpAdvantage": 0,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 2,
+      "turretPlatesTaken": 11,
+      "soloKills": 3,
+      "killsNearEnemyTurret": 1,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 2,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 1,
+      "teamDamagePercentage": 0.3082525496769178,
+      "damageTakenOnTeamPercentage": 0.1910291444117751,
+      "killParticipation": 0.5384615384615384,
+      "visionScoreAdvantageLaneOpponent": -0.4644940495491028,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 3
+    },
+    "team": [
+      {
+        "teamId": 100,
+        "kills": 9,
+        "totalDamageDealtToChampions": 36054
+      },
+      {
+        "teamId": 100,
+        "kills": 3,
+        "totalDamageDealtToChampions": 21244
+      },
+      {
+        "teamId": 100,
+        "kills": 14,
+        "totalDamageDealtToChampions": 30818
+      },
+      {
+        "teamId": 100,
+        "kills": 10,
+        "totalDamageDealtToChampions": 21964
+      },
+      {
+        "teamId": 100,
+        "kills": 3,
+        "totalDamageDealtToChampions": 6882
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5529091256",
+    "game_duration": 911,
+    "participant": {
+      "championName": "Graves",
+      "teamPosition": "JUNGLE",
+      "teamId": 100,
+      "win": true,
+      "kills": 11,
+      "deaths": 0,
+      "assists": 6,
+      "totalMinionsKilled": 5,
+      "neutralMinionsKilled": 140,
+      "totalDamageDealtToChampions": 10624,
+      "visionScore": 20,
+      "totalTimeSpentDead": 0,
+      "wardsPlaced": 5,
+      "wardsKilled": 1,
+      "detectorWardsPlaced": 4
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 1,
+      "maxCsAdvantageOnLaneOpponent": 60.50000002980232,
+      "laningPhaseGoldExpAdvantage": 1,
+      "earlyLaningPhaseGoldExpAdvantage": 1,
+      "maxLevelLeadLaneOpponent": 3,
+      "turretPlatesTaken": 2,
+      "soloKills": 1,
+      "killsNearEnemyTurret": 3,
+      "jungleCsBefore10Minutes": 86.80000013113022,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.22198897508384702,
+      "damageTakenOnTeamPercentage": 0.110425473987235,
+      "killParticipation": 0.68,
+      "visionScoreAdvantageLaneOpponent": 1.8745999336242676,
+      "controlWardsPlaced": 4,
+      "wardTakedowns": 1
+    },
+    "team": [
+      {
+        "teamId": 100,
+        "kills": 2,
+        "totalDamageDealtToChampions": 10540
+      },
+      {
+        "teamId": 100,
+        "kills": 11,
+        "totalDamageDealtToChampions": 10624
+      },
+      {
+        "teamId": 100,
+        "kills": 10,
+        "totalDamageDealtToChampions": 16219
+      },
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 6489
+      },
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 3988
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5529066581",
+    "game_duration": 1592,
+    "participant": {
+      "championName": "Katarina",
+      "teamPosition": "MIDDLE",
+      "teamId": 100,
+      "win": true,
+      "kills": 25,
+      "deaths": 4,
+      "assists": 11,
+      "totalMinionsKilled": 207,
+      "neutralMinionsKilled": 0,
+      "totalDamageDealtToChampions": 49810,
+      "visionScore": 27,
+      "totalTimeSpentDead": 86,
+      "wardsPlaced": 8,
+      "wardsKilled": 2,
+      "detectorWardsPlaced": 1
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 57,
+      "maxCsAdvantageOnLaneOpponent": 29,
+      "laningPhaseGoldExpAdvantage": 0,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 3,
+      "turretPlatesTaken": 39,
+      "soloKills": 4,
+      "killsNearEnemyTurret": 8,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 1,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 1,
+      "teamDamagePercentage": 0.4659276714707027,
+      "damageTakenOnTeamPercentage": 0.24109367123827638,
+      "killParticipation": 0.9230769230769231,
+      "visionScoreAdvantageLaneOpponent": 0.5636899471282959,
+      "controlWardsPlaced": 1,
+      "wardTakedowns": 2
+    },
+    "team": [
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 12670
+      },
+      {
+        "teamId": 100,
+        "kills": 6,
+        "totalDamageDealtToChampions": 17696
+      },
+      {
+        "teamId": 100,
+        "kills": 25,
+        "totalDamageDealtToChampions": 49810
+      },
+      {
+        "teamId": 100,
+        "kills": 4,
+        "totalDamageDealtToChampions": 16957
+      },
+      {
+        "teamId": 100,
+        "kills": 3,
+        "totalDamageDealtToChampions": 9770
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5526914432",
+    "game_duration": 1126,
+    "participant": {
+      "championName": "Yunara",
+      "teamPosition": "BOTTOM",
+      "teamId": 100,
+      "win": false,
+      "kills": 1,
+      "deaths": 5,
+      "assists": 0,
+      "totalMinionsKilled": 132,
+      "neutralMinionsKilled": 0,
+      "totalDamageDealtToChampions": 4526,
+      "visionScore": 11,
+      "totalTimeSpentDead": 109,
+      "wardsPlaced": 5,
+      "wardsKilled": 0,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 46,
+      "maxCsAdvantageOnLaneOpponent": 3,
+      "laningPhaseGoldExpAdvantage": 0,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 1,
+      "turretPlatesTaken": 2,
+      "soloKills": 0,
+      "killsNearEnemyTurret": 0,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.12241583065014615,
+      "damageTakenOnTeamPercentage": 0.16805586568486458,
+      "killParticipation": 0.1,
+      "visionScoreAdvantageLaneOpponent": -0.09462153911590576,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 0
+    },
+    "team": [
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 9391
+      },
+      {
+        "teamId": 100,
+        "kills": 6,
+        "totalDamageDealtToChampions": 8271
+      },
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 9540
+      },
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 4526
+      },
+      {
+        "teamId": 100,
+        "kills": 1,
+        "totalDamageDealtToChampions": 5248
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5528190237",
+    "game_duration": 1821,
+    "participant": {
+      "championName": "Nami",
+      "teamPosition": "UTILITY",
+      "teamId": 100,
+      "win": true,
+      "kills": 0,
+      "deaths": 4,
+      "assists": 20,
+      "totalMinionsKilled": 20,
+      "neutralMinionsKilled": 0,
+      "totalDamageDealtToChampions": 10915,
+      "visionScore": 90,
+      "totalTimeSpentDead": 118,
+      "wardsPlaced": 45,
+      "wardsKilled": 5,
+      "detectorWardsPlaced": 5
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 11,
+      "maxCsAdvantageOnLaneOpponent": 1,
+      "laningPhaseGoldExpAdvantage": 1,
+      "earlyLaningPhaseGoldExpAdvantage": 1,
+      "maxLevelLeadLaneOpponent": 2,
+      "turretPlatesTaken": 13,
+      "soloKills": 0,
+      "killsNearEnemyTurret": 0,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 3,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.11111861134676652,
+      "damageTakenOnTeamPercentage": 0.13560687690149323,
+      "killParticipation": 0.625,
+      "visionScoreAdvantageLaneOpponent": -0.05505412817001343,
+      "controlWardsPlaced": 5,
+      "wardTakedowns": 5
+    },
+    "team": [
+      {
+        "teamId": 100,
+        "kills": 7,
+        "totalDamageDealtToChampions": 16500
+      },
+      {
+        "teamId": 100,
+        "kills": 6,
+        "totalDamageDealtToChampions": 20062
+      },
+      {
+        "teamId": 100,
+        "kills": 2,
+        "totalDamageDealtToChampions": 15980
+      },
+      {
+        "teamId": 100,
+        "kills": 17,
+        "totalDamageDealtToChampions": 34772
+      },
+      {
+        "teamId": 100,
+        "kills": 0,
+        "totalDamageDealtToChampions": 10915
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5528887370",
+    "game_duration": 2331,
+    "participant": {
+      "championName": "Azir",
+      "teamPosition": "TOP",
+      "teamId": 200,
+      "win": true,
+      "kills": 13,
+      "deaths": 9,
+      "assists": 11,
+      "totalMinionsKilled": 272,
+      "neutralMinionsKilled": 4,
+      "totalDamageDealtToChampions": 64585,
+      "visionScore": 38,
+      "totalTimeSpentDead": 427,
+      "wardsPlaced": 11,
+      "wardsKilled": 7,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 90,
+      "maxCsAdvantageOnLaneOpponent": 51.75,
+      "laningPhaseGoldExpAdvantage": 0,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 2,
+      "turretPlatesTaken": 14,
+      "soloKills": 4,
+      "killsNearEnemyTurret": 1,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 1,
+      "teamDamagePercentage": 0.32855782147820867,
+      "damageTakenOnTeamPercentage": 0.19024552796394914,
+      "killParticipation": 0.6,
+      "visionScoreAdvantageLaneOpponent": 0.177010178565979,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 7
+    },
+    "team": [
+      {
+        "teamId": 200,
+        "kills": 13,
+        "totalDamageDealtToChampions": 64585
+      },
+      {
+        "teamId": 200,
+        "kills": 7,
+        "totalDamageDealtToChampions": 35143
+      },
+      {
+        "teamId": 200,
+        "kills": 11,
+        "totalDamageDealtToChampions": 46530
+      },
+      {
+        "teamId": 200,
+        "kills": 6,
+        "totalDamageDealtToChampions": 39642
+      },
+      {
+        "teamId": 200,
+        "kills": 3,
+        "totalDamageDealtToChampions": 10670
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5529039508",
+    "game_duration": 445,
+    "participant": {
+      "championName": "Pantheon",
+      "teamPosition": "JUNGLE",
+      "teamId": 200,
+      "win": false,
+      "kills": 0,
+      "deaths": 2,
+      "assists": 1,
+      "totalMinionsKilled": 6,
+      "neutralMinionsKilled": 27,
+      "totalDamageDealtToChampions": 732,
+      "visionScore": 3,
+      "totalTimeSpentDead": 24,
+      "wardsPlaced": 1,
+      "wardsKilled": 0,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 6,
+      "turretPlatesTaken": 0,
+      "soloKills": 0,
+      "killsNearEnemyTurret": 0,
+      "jungleCsBefore10Minutes": 27.750000029802322,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.09068481619920336,
+      "damageTakenOnTeamPercentage": 0.22173357490767243,
+      "killParticipation": 0.2,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 0
+    },
+    "team": [
+      {
+        "teamId": 200,
+        "kills": 2,
+        "totalDamageDealtToChampions": 2342
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 732
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 1804
+      },
+      {
+        "teamId": 200,
+        "kills": 3,
+        "totalDamageDealtToChampions": 1894
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 1301
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5526978612",
+    "game_duration": 1098,
+    "participant": {
+      "championName": "Akshan",
+      "teamPosition": "MIDDLE",
+      "teamId": 200,
+      "win": true,
+      "kills": 13,
+      "deaths": 1,
+      "assists": 2,
+      "totalMinionsKilled": 150,
+      "neutralMinionsKilled": 0,
+      "totalDamageDealtToChampions": 19514,
+      "visionScore": 6,
+      "totalTimeSpentDead": 37,
+      "wardsPlaced": 3,
+      "wardsKilled": 1,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 80,
+      "maxCsAdvantageOnLaneOpponent": 11,
+      "laningPhaseGoldExpAdvantage": 1,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 2,
+      "turretPlatesTaken": 17,
+      "soloKills": 2,
+      "killsNearEnemyTurret": 4,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 1,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.2937190551517796,
+      "damageTakenOnTeamPercentage": 0.14687059228087787,
+      "killParticipation": 0.625,
+      "visionScoreAdvantageLaneOpponent": -0.4558368921279907,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 1
+    },
+    "team": [
+      {
+        "teamId": 200,
+        "kills": 3,
+        "totalDamageDealtToChampions": 18676
+      },
+      {
+        "teamId": 200,
+        "kills": 3,
+        "totalDamageDealtToChampions": 12815
+      },
+      {
+        "teamId": 200,
+        "kills": 13,
+        "totalDamageDealtToChampions": 19514
+      },
+      {
+        "teamId": 200,
+        "kills": 4,
+        "totalDamageDealtToChampions": 8964
+      },
+      {
+        "teamId": 200,
+        "kills": 1,
+        "totalDamageDealtToChampions": 6470
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5529017751",
+    "game_duration": 801,
+    "participant": {
+      "championName": "Anivia",
+      "teamPosition": "BOTTOM",
+      "teamId": 200,
+      "win": false,
+      "kills": 4,
+      "deaths": 3,
+      "assists": 2,
+      "totalMinionsKilled": 102,
+      "neutralMinionsKilled": 0,
+      "totalDamageDealtToChampions": 9650,
+      "visionScore": 5,
+      "totalTimeSpentDead": 62,
+      "wardsPlaced": 5,
+      "wardsKilled": 0,
+      "detectorWardsPlaced": 0
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 66,
+      "maxCsAdvantageOnLaneOpponent": 35,
+      "earlyLaningPhaseGoldExpAdvantage": 1,
+      "maxLevelLeadLaneOpponent": 3,
+      "turretPlatesTaken": 5,
+      "soloKills": 2,
+      "killsNearEnemyTurret": 2,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 0,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.3021515859878169,
+      "damageTakenOnTeamPercentage": 0.28127435170425225,
+      "killParticipation": 0.75,
+      "visionScoreAdvantageLaneOpponent": 0.15549159049987793,
+      "controlWardsPlaced": 0,
+      "wardTakedowns": 0
+    },
+    "team": [
+      {
+        "teamId": 200,
+        "kills": 1,
+        "totalDamageDealtToChampions": 9155
+      },
+      {
+        "teamId": 200,
+        "kills": 3,
+        "totalDamageDealtToChampions": 3624
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 6853
+      },
+      {
+        "teamId": 200,
+        "kills": 4,
+        "totalDamageDealtToChampions": 9650
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 2654
+      }
+    ]
+  },
+  {
+    "match_id": "NA1_5524226466",
+    "game_duration": 1186,
+    "participant": {
+      "championName": "Bard",
+      "teamPosition": "UTILITY",
+      "teamId": 200,
+      "win": false,
+      "kills": 1,
+      "deaths": 2,
+      "assists": 8,
+      "totalMinionsKilled": 18,
+      "neutralMinionsKilled": 0,
+      "totalDamageDealtToChampions": 6858,
+      "visionScore": 62,
+      "totalTimeSpentDead": 10,
+      "wardsPlaced": 29,
+      "wardsKilled": 5,
+      "detectorWardsPlaced": 3
+    },
+    "challenges": {
+      "laneMinionsFirst10Minutes": 11,
+      "maxCsAdvantageOnLaneOpponent": 2,
+      "laningPhaseGoldExpAdvantage": 0,
+      "earlyLaningPhaseGoldExpAdvantage": 0,
+      "maxLevelLeadLaneOpponent": 1,
+      "turretPlatesTaken": 2,
+      "soloKills": 0,
+      "killsNearEnemyTurret": 0,
+      "jungleCsBefore10Minutes": 0,
+      "dragonTakedowns": 1,
+      "riftHeraldTakedowns": 0,
+      "baronTakedowns": 0,
+      "teamDamagePercentage": 0.1453435611084691,
+      "damageTakenOnTeamPercentage": 0.207271575641735,
+      "killParticipation": 0.8181818181818182,
+      "visionScoreAdvantageLaneOpponent": 0.39070773124694824,
+      "controlWardsPlaced": 3,
+      "wardTakedowns": 5
+    },
+    "team": [
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 3649
+      },
+      {
+        "teamId": 200,
+        "kills": 7,
+        "totalDamageDealtToChampions": 12165
+      },
+      {
+        "teamId": 200,
+        "kills": 0,
+        "totalDamageDealtToChampions": 10100
+      },
+      {
+        "teamId": 200,
+        "kills": 3,
+        "totalDamageDealtToChampions": 14412
+      },
+      {
+        "teamId": 200,
+        "kills": 1,
+        "totalDamageDealtToChampions": 6858
+      }
+    ]
+  }
+]

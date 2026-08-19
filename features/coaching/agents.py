@@ -106,9 +106,21 @@ Injected coaching knowledge:
 
 Output exactly these 3 labeled answers and nothing else:
 
-Main Diagnosis: Evidence: [one real metric, item, enemy champion, or comp fact]. Meaning: [the most important review point: repeat a strength or fix a risk]. Action: [one concrete next-game action].
-Lane Phase: Evidence: [CS@10, gold@10, deaths, CS/min, or say unclear from available data]. Meaning: [pressure/stabilize/concede wave/roam diagnosis]. Action: [one lane-specific correction].
-Threat Handling: Evidence: [enemy threat names, deaths, items, vision, or say unclear from available data]. Meaning: [what the threat changed about spacing, spell usage, or itemization]. Action: [one specific spell-hold, vision-entry, or itemization correction].
+Main Diagnosis: Evidence: <one real metric, item, enemy champion, or comp fact>. Meaning: <the most important review point: repeat a strength or fix a risk>. Action: <WHEN-trigger + do-what + TARGET number>.
+Lane Phase: Evidence: <CS@10, gold@10, deaths, CS/min — or state the field is unavailable>. Meaning: <pressure/stabilize/concede wave/roam diagnosis>. Action: <WHEN-trigger + do-what + TARGET number>.
+Threat Handling: Evidence: <enemy threat names, deaths, items, vision — or state the field is unavailable>. Meaning: <what the threat changed about spacing, spell usage, or itemization>. Action: <WHEN-trigger + do-what + TARGET number>.
+
+ACTION RULES — the player must know exactly what to do next game:
+- Every Action needs a TRIGGER (when it fires) and a TARGET (a number to check afterwards).
+  GOOD: "Before each dragon spawn, place a control ward in the enemy raptor camp — buy 2 per game."
+  GOOD: "Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00."
+  BAD:  "Focus on positioning." / "Work on your vision." / "Prioritize objectives."
+- Never open an Action with: Focus on, Work on, Prioritize, Improve, Be more, Make sure, Ensure, Maintain, Look for opportunities.
+- Name the concrete thing: a ward spot, a recall timing, a wave state, a specific ability to hold, an item, a minute mark.
+- ROLE FIT — judge the player only by what this role is graded on:
+  UTILITY (support): vision, roam timing, kill participation, survival. NEVER tell a support to last-hit or improve CS/farm efficiency.
+  JUNGLE: gank impact, objective setup, vision, jungle CS pace. Do not grade a jungler on solo-lane laning.
+  MIDDLE/TOP/BOTTOM: lane CS at 10, damage share, survival, item timing.
 
 Rules:
 - Max 2 short sentences and 56 words per answer.
@@ -265,11 +277,26 @@ ROLE EXECUTION
 [Explain whether {champion} {position} fulfilled the comp job. Mention the player's job and one thing they should not confuse with another teammate's job.]
 
 TURNING POINTS
-- [Timestamp/evidence] What happened: ... Why it mattered: ... Replay checklist: wave/vision/cooldown/position.
-- [Timestamp/evidence] What happened: ... Why it mattered: ... Replay checklist: wave/vision/cooldown/position.
+- <real timestamp or named scoreboard fact — never the words "Unknown" or a placeholder> What happened: <what the data shows>. Why it mattered: <the consequence>. Replay checklist: Verify <ONE specific thing to look at, e.g. "was the wave crashed before you rotated?">
+- <second one, using the same literal labels: "What happened:", "Why it mattered:", "Replay checklist: Verify ...">
+
+Keep the literal labels "What happened:", "Why it mattered:", and "Replay checklist: Verify" in every turning point.
 
 PRACTICE ASSIGNMENT
-[One measurable drill or trigger rule for the next similar game. Include a target number or a clear pass/fail checklist.]
+<A drill the player can run next game. It MUST contain a TRIGGER (when it fires) and a TARGET (a number to check afterwards).>
+
+ACTION RULES — the player must know exactly what to do next game:
+- PRACTICE ASSIGNMENT needs a TRIGGER (when it fires) and a TARGET (a number to check).
+  GOOD: "Before each dragon spawn, place a control ward in the enemy raptor camp — buy 2 per game."
+  GOOD: "Recall by minute 10 with 1300g; target first item by 12:00."
+  BAD:  "Focus on positioning." / "Work on vision." / "Prioritize objectives."
+- Never open PRACTICE ASSIGNMENT with: Focus on, Work on, Prioritize, Improve, Be more, Make sure, Ensure, Maintain, Look for opportunities.
+- Each TURNING POINT replay checklist must name ONE specific thing to look at, not a list of four categories.
+- If no real timestamp exists, do NOT write "[Unknown Timestamp]" or any placeholder. Either anchor the turning point on a named scoreboard fact ("the fight where you took 46% of team damage"), or write one line: "Timeline data unavailable — turning points cannot be timestamped for this match."
+- ROLE FIT — judge the player only by what this role is graded on:
+  UTILITY (support): vision, roam timing, kill participation, survival. NEVER tell a support to last-hit or improve CS/farm efficiency.
+  JUNGLE: gank impact, objective setup, vision, jungle CS pace. Do not grade a jungler on solo-lane laning.
+  MIDDLE/TOP/BOTTOM: lane CS at 10, damage share, survival, item timing.
 
 Rules:
 - The coach engine facts are authoritative; do not contradict them.
@@ -477,7 +504,11 @@ def _repair_coaching_report(state: CoachingState) -> CoachingState:
 def _finalize_coaching_report(state: CoachingState) -> CoachingState:
     draft = state.get("draft", "")
     labels = state.get("labels", COACHING_LABELS)
-    if draft.startswith("LLM unavailable") or not _has_colon_labels(draft, labels):
+    if (
+        draft.startswith("LLM unavailable")
+        or not _has_colon_labels(draft, labels)
+        or not state.get("passed_reflection", False)
+    ):
         draft = _strategic_fallback(
             bool(state.get("win")),
             state.get("champion", ""),

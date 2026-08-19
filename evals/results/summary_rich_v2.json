@@ -1,0 +1,42 @@
+{
+  "n_matches": 19,
+  "draft_contradiction_rate": 0.15789473684210525,
+  "baseline": {
+    "reflection_pass_rate_first": 0.9473684210526315,
+    "reflection_pass_rate_final": 1.0,
+    "repair_rate": 0.05263157894736842,
+    "final_contradiction_rate": 0.10526315789473684,
+    "shipped_contradiction_rate": 0.10526315789473684,
+    "fallback_rate": 0.0,
+    "latency_repair_p50": 2.7
+  },
+  "v2": {
+    "reflection_pass_rate_first": 0.8421052631578947,
+    "reflection_pass_rate_final": 0.8947368421052632,
+    "repair_rate": 0.15789473684210525,
+    "final_contradiction_rate": 0.10526315789473684,
+    "shipped_contradiction_rate": 0.0,
+    "fallback_rate": 0.10526315789473684,
+    "latency_repair_p50": 3.03
+  },
+  "backend": "cloud (gpt-4o-mini)",
+  "content_quality": {
+    "pass_rate": 1.0,
+    "avg_match_anchors": 4.79,
+    "template_leak_rate": 0.0,
+    "role_nonsense_rate": 0.0,
+    "generic_rate": 0.0
+  },
+  "actionability": {
+    "actionable_action_rate": 0.3157894736842105,
+    "vague_opener_rate": 0.0,
+    "has_target_rate": 0.3157894736842105,
+    "has_trigger_rate": 1.0,
+    "reports_with_zero_actionable": 0.3684210526315789,
+    "n_actions": 57
+  },
+  "specificity_rate": 1.0,
+  "avg_word_count": 135,
+  "latency_draft_p50": 3.2,
+  "dataset": "rich (full local challenges block)"
+}

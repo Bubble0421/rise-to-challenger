@@ -1,0 +1,19 @@
+{
+  "n_matches": 19,
+  "backend": "cloud (gpt-4o-mini)",
+  "reflection_pass_rate": 0.3684210526315789,
+  "actionability": {
+    "assignment_actionable_rate": 1.0,
+    "assignment_has_trigger_rate": 1.0,
+    "assignment_has_target_rate": 1.0,
+    "assignment_vague_opener_rate": 0.0,
+    "turning_actionable_rate": 0.4473684210526316
+  },
+  "content": {
+    "avg_match_anchors": 7.68,
+    "template_leak_rate": 0.0,
+    "role_nonsense_rate": 0.0
+  },
+  "avg_word_count": 288,
+  "latency_p50": 5.96
+}

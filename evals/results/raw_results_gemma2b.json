@@ -1,0 +1,702 @@
+[
+  {
+    "match_id": "NA1_5539324431",
+    "champion": "Viego",
+    "position": "TOP",
+    "win": false,
+    "above_avg": "CS/min (7.7 vs 7.4), kill participation (46.2 vs 35.7), damage share (28.8 vs 22.0), deaths (5.0 vs 5.5)",
+    "below_avg": "KDA (1.2 vs 2.9), vision (16.0 vs 22.4)",
+    "draft": "Main Diagnosis: Evidence:  Damage share 28.8% Meaning:  Focus on maximizing damage output and contributing to teamfight pressure. Action:  Prioritize high-impact trades and engage in fights where Viego can maximize his potential.\n\nLane Phase:  Evidence:  Unclear from available data. Meaning:  The lane phase's state is unclear due to the lack of information about CS@10, gold@10, deaths, or CS/min. Action:  Clarify the lane phase by providing more context on the game's progression and the player's actions in the lane.\n\nThreat Handling: Evidence:  Unclear from available data. Meaning:  The threat of enemy assassins is unclear due to the lack of information about deaths, items, vision, or enemy champion names. Action:  Request additional data to assess the threat level and adjust the defensive strategy accordingly.",
+    "draft_contradictions": 1,
+    "has_number": true,
+    "word_count": 121,
+    "latency_draft": 24.74,
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "may critique an above-average metric",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 3,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 13.69
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "CONTRADICTION: 'deaths' is ABOVE the Challenger benchmark (a strength) but the output criticizes it near that mention \u2014 rewrite as a strength.",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 20.98
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5522571485",
+    "champion": "Rengar",
+    "position": "JUNGLE",
+    "win": true,
+    "above_avg": "CS/min (7.6 vs 7.3), vision (26.0 vs 25.6), damage share (22.7 vs 21.3)",
+    "below_avg": "KDA (2.7 vs 3.9), kill participation (47.1 vs 55.4), deaths (6.0 vs 5.5)",
+    "draft": "Main Diagnosis: Evidence: Damage share 22.7% Meaning:  Focus on maximizing your impact through aggressive plays and objective control. Action: Prioritize early game aggression and engage opportunities with Rengar's strengths.\n\nLane Phase: Evidence: CS/min 7.6, gold@10 unclear from available data. Meaning:  Maintain a consistent farm pace while prioritizing objectives. Action: Focus on securing vision and maximizing your CS/min to establish dominance in the lane phase.\n\nThreat Handling: Evidence: Unclear from available data. Meaning:  Rengar's threat pressure needs to be assessed based on enemy champion composition and playstyle. Action:  Evaluate potential threats, adjust positioning accordingly, and consider defensive items like Locket when needed.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 101,
+    "latency_draft": 20.13,
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "contains vague coaching language",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 12.93
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "contains vague coaching language",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 2,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 17.42
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5524737154",
+    "champion": "Anivia",
+    "position": "MIDDLE",
+    "win": true,
+    "above_avg": "CS/min (8.1 vs 7.9), damage share (23.3 vs 20.7), deaths (1.0 vs 4.1)",
+    "below_avg": "KDA (4.0 vs 4.3), vision (6.0 vs 19.7), kill participation (21.1 vs 41.6)",
+    "draft": "## Main Diagnosis: \nEvidence: Damage share (23.3%) Meaning:  Anivia's strong damage output is a key asset for teamfights and objectives. Action: Prioritize high-impact engagements in teamfights and look to secure kills with Anivia's Q.\n\n## Lane Phase: \nEvidence: CS/min (8.1) Meaning: The lane appears to be stable, but the potential for early pressure is limited. Action: Focus on maximizing farm while maintaining a safe wave presence.\n\n## Threat Handling: \nEvidence:  Unclear from available data. Meaning:  The threat level and enemy champion composition are unclear from the provided data. Action: Further analysis of the opponent's playstyle and champion pool is needed to assess the specific threat.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 105,
+    "latency_draft": 20.07,
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 13.93
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 19.19
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5536166946",
+    "champion": "Samira",
+    "position": "BOTTOM",
+    "win": false,
+    "above_avg": "vision (20.0 vs 17.0)",
+    "below_avg": "KDA (1.6 vs 2.9), CS/min (6.1 vs 7.7), kill participation (39.6 vs 43.7), damage share (19.7 vs 20.9), deaths (12.0 vs 6.0)",
+    "draft": "Main Diagnosis: Evidence: Deaths (12.0) Meaning:  High deaths indicate a lack of early game pressure and potential for getting caught out. Action: Prioritize positioning and engage opportunities in lane to secure kills and minimize death risk.\n\nLane Phase: Evidence: CS@10, gold@10, deaths, CS/min, or say unclear from available data. Meaning:  Unclear from available data. Action:  Focus on securing early game pressure by maximizing CS/min and minimizing deaths. \n\nThreat Handling: Evidence: Enemy threat names, deaths, items, vision, or say unclear from available data. Meaning:  Enemy team's composition and engagement style needs to be analyzed for optimal counterplay. Action:  Analyze enemy champion compositions and adjust positioning based on their strengths and weaknesses.",
+    "draft_contradictions": 1,
+    "has_number": true,
+    "word_count": 110,
+    "latency_draft": 20.57,
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 1,
+        "shipped_contradictions": 1,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "CONTRADICTION: 'deaths' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 15.05
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5529516849",
+    "champion": "Karma",
+    "position": "UTILITY",
+    "win": true,
+    "above_avg": "kill participation (63.2 vs 56.7)",
+    "below_avg": "KDA (4.0 vs 4.3), CS/min (0.9 vs 1.1), vision (67.0 vs 73.4), damage share (9.5 vs 11.0), deaths (6.0 vs 5.1)",
+    "draft": "Main Diagnosis: Evidence:  Vision score 67.0 vs Challenger average 73.4. Meaning: Vision is a key factor in Karma's success. Action: Prioritize vision setup with teammates before objectives and use long-range spells to check unsafe brush.\n\nLane Phase: Evidence:  CS@10, gold@10, deaths, CS/min, or say unclear from available data. Meaning:  Unclear from available data. Action:  Focus on consistent last hitting and farm efficiency. \n\nThreat Handling: Evidence:  Enemy threat names, deaths, items, vision, or say unclear from available data. Meaning:  Unclear from available data. Action:  Develop a plan to counter hard engage based on the enemy team composition.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 96,
+    "latency_draft": 20.5,
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5527202420",
+    "champion": "Irelia",
+    "position": "TOP",
+    "win": true,
+    "above_avg": "CS/min (10.3 vs 8.9), vision (18.0 vs 18.0), kill participation (57.1 vs 35.9), damage share (31.2 vs 24.3), deaths (6.0 vs 6.1)",
+    "below_avg": "KDA (2.0 vs 3.3)",
+    "draft": "## Main Diagnosis: Evidence: KDA (2.0) Meaning:  Focus on maximizing impact per minute by prioritizing high damage share and efficient kill participation. Action: Prioritize last-hitting and securing kills with Irelia's burst potential. \n\n## Lane Phase: Evidence: CS@10 is unclear from available data. Meaning:  Unclear lane phase, but focus on consistent wave management to maximize gold income and pressure opportunities. Action:  Focus on maximizing farm efficiency and wave control.\n\n## Threat Handling: Evidence: Unclear from available data. Meaning:  Enemy threat information unavailable. Action:  Request enemy champion information for a more accurate analysis of the threat landscape.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 95,
+    "latency_draft": 19.34,
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 16.58
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 13.87
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5525999180",
+    "champion": "JarvanIV",
+    "position": "JUNGLE",
+    "win": false,
+    "above_avg": "none listed",
+    "below_avg": "KDA (1.0 vs 5.8), CS/min (6.0 vs 7.1), vision (25.0 vs 28.8), kill participation (43.8 vs 62.9), damage share (6.8 vs 17.2), deaths (7.0 vs 5.0)",
+    "draft": "Main Diagnosis: Evidence: KDA (1.0) Meaning:  Focus on maximizing kill participation and pressure generation. Action: Prioritize aggressive ganks and engage opportunities early in the game. \n\nLane Phase: Evidence:  CS@10 is unclear from available data. Meaning:  Unclear lane phase, but focus should be on securing objectives and maintaining a strong wave presence. Action:  Focus on securing objectives and maintaining a strong wave presence.\n\nThreat Handling: Evidence:  Enemy threat unclear from available data. Meaning:  The enemy team's composition and strategy are unclear. Action:  Prioritize objective setup and engage opportunities based on the enemy team composition.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 93,
+    "latency_draft": 18.15,
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5542528643",
+    "champion": "Lissandra",
+    "position": "MIDDLE",
+    "win": false,
+    "above_avg": "CS/min (8.5 vs 7.9), damage share (28.7 vs 22.3)",
+    "below_avg": "KDA (0.4 vs 4.0), vision (15.0 vs 23.0), kill participation (42.9 vs 48.3), deaths (7.0 vs 4.9)",
+    "draft": "## Main Diagnosis: Evidence: KDA 0.43 Meaning:  Focus on maximizing damage output and minimizing deaths is crucial for a successful Lissandra game. Action: Prioritize landing impactful spells and positioning to maximize damage potential.\n\nLane Phase: Evidence: CS@10 unclear Meaning:  The lack of data makes it difficult to assess the lane's progress. Action:  Clarify the lane phase by requesting more detailed information on the game's progression. \n\nThreat Handling: Evidence:  Unclear from available data. Meaning:  Understanding the enemy team composition and their playstyle is crucial for effective threat management. Action:  Requesting a breakdown of enemy champions, items, and vision control to assess the threat landscape.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 103,
+    "latency_draft": 19.16,
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 17.03
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 13.85
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5541408837",
+    "champion": "Velkoz",
+    "position": "BOTTOM",
+    "win": false,
+    "above_avg": "damage share (25.6 vs 23.6)",
+    "below_avg": "KDA (1.9 vs 3.3), CS/min (7.4 vs 7.8), vision (17.0 vs 17.7), kill participation (46.4 vs 47.9), deaths (7.0 vs 5.7)",
+    "draft": "## Main Diagnosis: Evidence: KDA (1.86) Meaning:  Focus on maximizing damage uptime and consistent pressure. Action: Prioritize landing high-impact spells like Q and E consistently. \n\n## Lane Phase: Evidence: CS@10 is unclear. Meaning:  Unclear from available data. Action:  Reassess lane phase based on updated information. \n\n## Threat Handling: Evidence: Unclear from available data. Meaning:  Understanding the enemy threat's composition and positioning is crucial for effective defense. Action:  Requesting more detailed threat analysis.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 72,
+    "latency_draft": 16.22,
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 14.14
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 10.76
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5530187950",
+    "champion": "Rakan",
+    "position": "UTILITY",
+    "win": false,
+    "above_avg": "CS/min (1.9 vs 1.1), damage share (10.6 vs 8.2), deaths (1.0 vs 5.3)",
+    "below_avg": "KDA (0.0 vs 4.3), vision (1.0 vs 83.5), kill participation (0.0 vs 59.7)",
+    "draft": "Main Diagnosis: Evidence: KDA (0.0) Meaning:  Rakan's low KDA indicates a lack of impactful plays and missed opportunities for damage or support. Action: Focus on maximizing kill participation by prioritizing engage opportunities with teammates. \n\nLane Phase: Evidence: unclear from available data. Meaning: The lane phase is unclear, as the provided data lacks information about CS@10, gold@10, deaths, CS/min, and other relevant metrics. Action:  Clarify the lane phase's status and provide a more detailed analysis once the data is complete. \n\nThreat Handling: Evidence: unclear from available data. Meaning: The threat handling was not clear from the provided data. Action:  Provide a more detailed analysis of the enemy team composition, including their champion picks, itemization, and playstyle.",
+    "draft_contradictions": 2,
+    "has_number": true,
+    "word_count": 115,
+    "latency_draft": 21.48,
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "may critique an above-average metric",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 2,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 12.38
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "CONTRADICTION: 'cs/min' is ABOVE the Challenger benchmark (a strength) but the output criticizes it near that mention \u2014 rewrite as a strength.; CONTRADICTION: 'deaths' is ABOVE the Challenger benchmark (a strength) but the output criticizes it near that mention \u2014 rewrite as a strength.",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 2,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 22.21
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5544648658",
+    "champion": "Ornn",
+    "position": "TOP",
+    "win": true,
+    "above_avg": "CS/min (7.8 vs 6.8), damage share (23.3 vs 18.2), deaths (2.0 vs 3.9)",
+    "below_avg": "KDA (4.5 vs 5.0), vision (14.0 vs 21.0), kill participation (36.0 vs 40.9)",
+    "draft": "## Main Diagnosis: Evidence: Damage share 23.3% Meaning:  Focus on maximizing damage contribution in teamfights. Action: Prioritize high-impact engagements and aim for impactful trades.\n\n## Lane Phase: Evidence: CS@10 unclear from available data. Meaning:  Unclear lane phase, but focus on maintaining a stable wave state. Action:  Assess the wave state and adjust farm accordingly. \n\n## Threat Handling: Evidence: Unclear from available data. Meaning:  Understanding enemy threat composition is crucial for effective positioning. Action:  Analyze enemy champion picks and itemization to identify potential threats.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 83,
+    "latency_draft": 16.89,
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 14.72
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 11.68
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5541431843",
+    "champion": "Sejuani",
+    "position": "JUNGLE",
+    "win": false,
+    "above_avg": "vision (35.0 vs 26.7), kill participation (62.1 vs 54.2), damage share (22.1 vs 19.9), deaths (5.0 vs 5.1)",
+    "below_avg": "KDA (3.6 vs 4.7), CS/min (6.4 vs 7.2)",
+    "draft": "Main Diagnosis: Evidence: Damage share 22.1% Meaning:  Focus on maximizing impact in teamfights and objectives. Action: Prioritize engaging in fights with teammates and securing kills/assists.\n\nLane Phase: Evidence: CS@10 unclear from available data. Meaning:  Unclear if the lane phase was stable or conceded to enemy pressure. Action:  Investigate the specific CS@10 numbers for a more accurate assessment of the lane's progression. \n\nThreat Handling: Evidence: Unclear from available data. Meaning:  The threat level and its impact on Sejuani's gameplay are unclear. Action:  Request additional data to analyze enemy champion compositions, itemization, and playstyle.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 92,
+    "latency_draft": 19.41,
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5543661555",
+    "champion": "Yone",
+    "position": "MIDDLE",
+    "win": true,
+    "above_avg": "kill participation (39.5 vs 38.3), damage share (24.6 vs 22.8), deaths (6.0 vs 6.4)",
+    "below_avg": "KDA (2.5 vs 3.0), CS/min (7.7 vs 8.1), vision (17.0 vs 20.1)",
+    "draft": "## Main Diagnosis: \nEvidence: Damage share (24.6%) Meaning:  Focus on maximizing damage output and impact in teamfights. Action: Prioritize high-impact engagements with Yone's abilities.\n\n## Lane Phase: \nEvidence: CS/min (7.7) Meaning:  Maintain a consistent farm pace to secure gold and level advantage. Action:  Ensure consistent last hitting and wave management for optimal lane control.\n\n## Threat Handling: \nEvidence: Unclear from available data. Meaning:  Understanding enemy threat composition and positioning is crucial. Action:  Request information about the enemy team's composition and playstyle.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 81,
+    "latency_draft": 17.47,
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 18.6
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 14.89
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5535725144",
+    "champion": "Caitlyn",
+    "position": "BOTTOM",
+    "win": false,
+    "above_avg": "CS/min (8.6 vs 8.2), vision (30.0 vs 18.7), kill participation (57.7 vs 47.3), damage share (29.3 vs 22.8)",
+    "below_avg": "KDA (2.1 vs 2.9), deaths (7.0 vs 5.1)",
+    "draft": "Main Diagnosis: Evidence: Deaths (7.0) Meaning:  Risk of overextending and dying due to engagement risk is a significant factor in this loss. Action:  Prioritize positioning around the turret and avoid engaging unless there's clear advantage. \n\nLane Phase: Evidence: CS@10, gold@10, deaths, CS/min, or say unclear from available data. Meaning:  Unclear from available data. Action:  Focus on maximizing farm efficiency and wave control to secure a strong lane presence.\n\nThreat Handling: Evidence: Enemy threat names, deaths, items, vision, or say unclear from available data. Meaning:  The enemy team's hard engage threat was present but not fully exploited. Action:  Maintain long-range vision with Caitlyn's abilities and prioritize setting up traps to counter the threat.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 112,
+    "latency_draft": 21.66,
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5530286659",
+    "champion": "Morgana",
+    "position": "UTILITY",
+    "win": true,
+    "above_avg": "CS/min (1.2 vs 1.1), vision (79.0 vs 74.2), deaths (5.0 vs 5.7)",
+    "below_avg": "KDA (3.8 vs 4.1), kill participation (51.4 vs 57.2), damage share (6.4 vs 11.4)",
+    "draft": "Main Diagnosis: Evidence:  Vision score of 79.0 vs 74.2\nMeaning:  Prioritize vision timing and death risk while warding over raw damage.\nAction:  Use long-range spells to check unsafe brush before entering fog.\n\nLane Phase:  Evidence:  CS@10, gold@10, deaths, CS/min, or say unclear from available data. \nMeaning:  Pressure/stabilize the wave and roam.\nAction:  Focus on securing a consistent farm rhythm and roaming opportunities.\n\nThreat Handling: Evidence:  Enemy threat names, deaths, items, vision, or say unclear from available data.\nMeaning:  The enemy team's CC chain was effective in locking down Morgana. \nAction:  Use defensive support items like Locket when the enemy team is likely to engage first.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 105,
+    "latency_draft": 22.09,
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "each answer must explain meaning or uncertainty; each answer must include action or uncertainty",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 21.11
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "each answer must explain meaning or uncertainty; each answer must include action or uncertainty",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 17.63
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5525341297",
+    "champion": "Sion",
+    "position": "TOP",
+    "win": false,
+    "above_avg": "CS/min (8.2 vs 7.6), deaths (2.0 vs 4.7)",
+    "below_avg": "KDA (1.5 vs 3.3), vision (7.0 vs 20.6), kill participation (20.0 vs 34.0), damage share (14.1 vs 18.8)",
+    "draft": "## Main Diagnosis: Evidence: KDA (1.5) Meaning:  Focus on maximizing impact and minimizing deaths for a more impactful presence in teamfights. Action: Prioritize last-hitting and securing kills when possible. \n\nLane Phase: Evidence: CS/min (8.2) Meaning:  Maintain consistent farm to secure gold advantage and pressure the lane, potentially allowing for roaming opportunities. Action: Focus on maximizing CS/min while maintaining a healthy wave state.\n\nThreat Handling: Evidence: Unclear from available data. Meaning:  The threat's impact on Sion's positioning and engagement needs further analysis based on available data. Action: Analyze enemy champion movements and engage patterns to adjust Sion's playstyle accordingly.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 98,
+    "latency_draft": 18.99,
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 13.44
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 10.24
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5530546945",
+    "champion": "LeeSin",
+    "position": "JUNGLE",
+    "win": true,
+    "above_avg": "KDA (6.5 vs 5.4), CS/min (7.3 vs 6.9), damage share (22.1 vs 18.9), deaths (4.0 vs 4.8)",
+    "below_avg": "vision (20.0 vs 30.0), kill participation (55.3 vs 57.4)",
+    "draft": "Main Diagnosis: Evidence: Damage share 22.1% Meaning:  Focus on maximizing impact and securing kills for team success. Action: Prioritize high-impact engagements with LeeSin's mobility and engage potential.\n\nLane Phase: Evidence: CS/min 7.3, gold@10 unclear from available data Meaning: Stabilize wave pressure and farm consistently. Action: Focus on consistent last hitting to secure gold and maintain lane dominance.\n\nThreat Handling: Evidence:  Unclear from available data Meaning: Assess enemy threat based on their champion pool and playstyle. Action: Utilize LeeSin's mobility and engage potential to counter specific threats.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 86,
+    "latency_draft": 18.93,
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5522222909",
+    "champion": "Viktor",
+    "position": "MIDDLE",
+    "win": false,
+    "above_avg": "CS/min (8.1 vs 8.0), vision (20.0 vs 18.6), damage share (27.1 vs 24.3)",
+    "below_avg": "KDA (1.1 vs 3.7), kill participation (30.8 vs 41.2), deaths (7.0 vs 4.6)",
+    "draft": "Main Diagnosis: Evidence:  KDA (1.14) Meaning:  Focus on maximizing KDA through efficient trading and objective participation. Action:  Prioritize trades over aggressive plays early game. \n\nLane Phase: Evidence:  CS@10 is unclear from available data. Meaning:  Unclear lane phase, but focus on securing CS/min to maintain a stable wave state. Action:  Focus on maximizing CS/min and gold income in the laning phase. \n\nThreat Handling: Evidence:  Enemy threat names are unclear from available data. Meaning:  Enemy threat information is unavailable; therefore, it's difficult to assess their impact on Viktor's gameplay. Action:  Request enemy champion information for a more comprehensive analysis.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 97,
+    "latency_draft": 20.86,
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5530545433",
+    "champion": "Ezreal",
+    "position": "BOTTOM",
+    "win": true,
+    "above_avg": "KDA (16.0 vs 3.5), CS/min (8.7 vs 7.8), vision (20.0 vs 17.7), kill participation (59.3 vs 46.1), damage share (26.8 vs 25.0), deaths (1.0 vs 5.5)",
+    "below_avg": "none listed",
+    "draft": "Main Diagnosis: Evidence: Damage share of 26.8%. Meaning:  Maximize damage uptime by prioritizing high-impact trades and maximizing burst potential. Action: Focus on landing key skillshots early in engagements to secure kills and maximize damage output.\n\nLane Phase: Evidence: CS/min 8.7, gold@10 unclear from available data. Meaning:  Maintain a consistent farm pace while securing objectives. Action: Prioritize farming and objective control to ensure a steady gold income and maintain lane pressure.\n\nThreat Handling: Evidence: Unclear from available data. Meaning:  Assess the threat of enemy engage champions based on their presence and itemization. Action:  Utilize long-range spells to check unsafe brush areas before objectives, especially during teamfights.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 105,
+    "latency_draft": 23.45,
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5527029619",
+    "champion": "Senna",
+    "position": "UTILITY",
+    "win": false,
+    "above_avg": "vision (69.0 vs 68.7)",
+    "below_avg": "KDA (1.3 vs 4.5), CS/min (1.1 vs 1.4), kill participation (45.0 vs 59.4), damage share (11.8 vs 17.0), deaths (7.0 vs 5.7)",
+    "draft": "## Main Diagnosis: Evidence:  KDA (1.29) Meaning:  Focus on maximizing KDA potential by prioritizing impactful plays and minimizing deaths. Action:  Prioritize high-impact engagements with teammates, aiming for 5+ kills per game.\n\n## Lane Phase:  Evidence:  CS@10 unclear from available data. Meaning:  Unclear lane phase status; focus on maintaining a steady wave state and maximizing gold income. Action:  Focus on consistent CS/min and farm efficiency to secure a stable lane presence. \n\n## Threat Handling: Evidence:  Enemy threat names, deaths, items, vision, or say unclear from available data. Meaning:  Understanding the enemy team composition and their playstyle is crucial for effective threat management. Action:  Utilize long-range spells to check unsafe brush before entering fog of war.",
+    "draft_contradictions": 1,
+    "has_number": true,
+    "word_count": 114,
+    "latency_draft": 22.38,
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "missing required labels",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 18.33
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "missing required labels; CONTRADICTION: 'deaths' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 18.23
+      }
+    }
+  }
+]

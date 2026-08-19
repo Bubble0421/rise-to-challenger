@@ -1,0 +1,790 @@
+[
+  {
+    "match_id": "NA1_5539324431",
+    "champion": "Viego",
+    "position": "TOP",
+    "win": false,
+    "above_avg": "CS/min (7.7 vs 7.4), kill participation (46.2 vs 35.7), damage share (28.8 vs 22.0), deaths (5.0 vs 5.5)",
+    "below_avg": "KDA (1.2 vs 2.9), vision (16.0 vs 22.4)",
+    "draft": "Main Diagnosis: Evidence: KDA of 1.2 is significantly below the Challenger average of 2.9. Meaning: Your low KDA indicates that while you participated in fights, your positioning or decision-making led to unnecessary deaths. Action: Focus on positioning and avoiding overcommitting in fights to reduce deaths and improve your KDA.\n\nLane Phase: Evidence: CS/min of 7.7 is above the Challenger average of 7.4. Meaning: You maintained good farm, indicating effective wave management. Action: Continue to prioritize wave control and look for opportunities to roam or assist your team when waves are pushed.\n\nThreat Handling: Evidence: The enemy has a Vi, a hard engage champion. Meaning: You need to be cautious of Vi's engage potential, which can lead to quick deaths if caught out. Action: Hold your spells for disengage and ensure vision is set up around objectives to avoid being caught by her engage.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 143,
+    "latency_draft": 5.54,
+    "match_anchors": 2,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5522571485",
+    "champion": "Rengar",
+    "position": "JUNGLE",
+    "win": true,
+    "above_avg": "CS/min (7.6 vs 7.3), vision (26.0 vs 25.6), damage share (22.7 vs 21.3)",
+    "below_avg": "KDA (2.7 vs 3.9), kill participation (47.1 vs 55.4), deaths (6.0 vs 5.5)",
+    "draft": "Main Diagnosis: Evidence: KDA of 2.67 is below the Challenger average of 3.9. Meaning: Your deaths indicate risky engagements that could be avoided. Action: Focus on positioning and using vision to assess threats before committing to fights.\n\nLane Phase: Evidence: unclear from available data. Meaning: unclear from available data. Action: unclear from available data.\n\nThreat Handling: Evidence: Facing a hard engage champion like Vi. Meaning: You need to adjust your spacing and spell usage to avoid being caught. Action: Hold your abilities until Vi commits to engage, ensuring you can respond effectively.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 92,
+    "latency_draft": 2.57,
+    "match_anchors": 1,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [
+      "GENERIC: report cites only 1 fact(s) from this match (need 2) \u2014 it would read the same for a different game"
+    ],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5524737154",
+    "champion": "Anivia",
+    "position": "MIDDLE",
+    "win": true,
+    "above_avg": "CS/min (8.1 vs 7.9), damage share (23.3 vs 20.7), deaths (1.0 vs 4.1)",
+    "below_avg": "KDA (4.0 vs 4.3), vision (6.0 vs 19.7), kill participation (21.1 vs 41.6)",
+    "draft": "Main Diagnosis: Evidence: KDA of 4.0 is below the Challenger average of 4.3. Meaning: While you had a strong performance, your KDA indicates missed opportunities for safer play. Action: Focus on positioning to avoid unnecessary deaths, especially against hard engage threats like Vi.\n\nLane Phase: Evidence: Unclear from available data. Meaning: Unclear. Action: Unclear from available data.\n\nThreat Handling: Evidence: The enemy has a hard engage champion (Vi) and your vision score is 6, significantly below the average of 19.7. Meaning: Lack of vision against Vi increases your risk of being caught out. Action: Prioritize placing wards in key areas before objectives to mitigate the threat of engage.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 108,
+    "latency_draft": 2.8,
+    "match_anchors": 2,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5536166946",
+    "champion": "Samira",
+    "position": "BOTTOM",
+    "win": false,
+    "above_avg": "vision (20.0 vs 17.0)",
+    "below_avg": "KDA (1.6 vs 2.9), CS/min (6.1 vs 7.7), kill participation (39.6 vs 43.7), damage share (19.7 vs 20.9), deaths (12.0 vs 6.0)",
+    "draft": "Main Diagnosis: Evidence: KDA of 1.58 is significantly below the Challenger average of 2.9. Meaning: Your high death count indicates a lack of positioning awareness during fights. Action: Focus on maintaining better positioning in team fights to reduce deaths and increase your overall impact.\n\nLane Phase: Evidence: CS/min of 6.1 is below the Challenger average of 7.7. Meaning: You struggled to secure farm efficiently, which affected your gold income. Action: Prioritize last-hitting minions to improve your CS and overall gold generation in the early game.\n\nThreat Handling: Evidence: You faced a hard engage threat (Vi) and had 12 deaths. Meaning: The threat of Vi's engage likely pressured your positioning and spell usage. Action: Use vision more proactively to track Vi's movements and hold your abilities until you can safely respond to her engages.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 133,
+    "latency_draft": 4.07,
+    "match_anchors": 3,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5529516849",
+    "champion": "Karma",
+    "position": "UTILITY",
+    "win": true,
+    "above_avg": "kill participation (63.2 vs 56.7)",
+    "below_avg": "KDA (4.0 vs 4.3), CS/min (0.9 vs 1.1), vision (67.0 vs 73.4), damage share (9.5 vs 11.0), deaths (6.0 vs 5.1)",
+    "draft": "Main Diagnosis: Evidence: KDA of 4.0, below the Challenger average of 4.3. Meaning: Your deaths indicate a risk in positioning during fights, especially against hard engage threats. Action: Focus on positioning behind your team and using your spells to peel instead of engaging directly.\n\nLane Phase: Evidence: unclear from available data. Meaning: unclear from available data. Action: unclear from available data.\n\nThreat Handling: Evidence: Facing a hard engage threat (Vi) and having 6 deaths. Meaning: The threat of Vi should have prompted more cautious positioning and spell usage. Action: Use long-range spells to check brushes before entering fog of war with teammates.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 102,
+    "latency_draft": 7.26,
+    "match_anchors": 2,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5527202420",
+    "champion": "Irelia",
+    "position": "TOP",
+    "win": true,
+    "above_avg": "CS/min (10.3 vs 8.9), vision (18.0 vs 18.0), kill participation (57.1 vs 35.9), damage share (31.2 vs 24.3), deaths (6.0 vs 6.1)",
+    "below_avg": "KDA (2.0 vs 3.3)",
+    "draft": "Main Diagnosis: Evidence: KDA of 2.0 is below the Challenger average of 3.3. Meaning: Your deaths indicate a risk in positioning during fights against hard engage. Action: Focus on maintaining safer positioning and using your spells defensively to avoid being caught by the enemy's engage.\n\nLane Phase: Evidence: CS/min of 10.3 is above the Challenger average of 8.9. Meaning: You effectively pressured your lane and farmed well. Action: Continue to prioritize wave management to maintain lane pressure while being aware of potential roams.\n\nThreat Handling: Evidence: The enemy has a hard engage threat in Vi. Meaning: This requires you to be cautious with your spacing and spell usage during skirmishes. Action: Hold your abilities until you can confirm Vi's position or use vision to check brushes before engaging.",
+    "draft_contradictions": 1,
+    "has_number": true,
+    "word_count": 128,
+    "latency_draft": 3.33,
+    "match_anchors": 2,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 1,
+        "shipped_contradictions": 1,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "CONTRADICTION: 'deaths' is ABOVE the Challenger benchmark (a strength) but the output criticizes it near that mention \u2014 rewrite as a strength.",
+        "repaired": true,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 2.5
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5525999180",
+    "champion": "JarvanIV",
+    "position": "JUNGLE",
+    "win": false,
+    "above_avg": "none listed",
+    "below_avg": "KDA (1.0 vs 5.8), CS/min (6.0 vs 7.1), vision (25.0 vs 28.8), kill participation (43.8 vs 62.9), damage share (6.8 vs 17.2), deaths (7.0 vs 5.0)",
+    "draft": "Main Diagnosis: Evidence: KDA of 0/7/7 indicates excessive deaths. Meaning: You are engaging in fights without sufficient follow-up or positioning, leading to low kill participation and high deaths. Action: Focus on positioning and timing your engages to ensure your team can follow up effectively, reducing unnecessary deaths.\n\nLane Phase: Evidence: CS/min of 6.0 is below the Challenger average of 7.1. Meaning: Your jungle pathing may not be efficient, leading to lower farm and tempo. Action: Optimize your jungle route to increase CS/min and maintain pressure on the map.\n\nThreat Handling: Evidence: Seven deaths indicate poor handling of enemy threats. Meaning: You are likely not respecting the enemy's engage potential, leading to unfavorable fights. Action: Use vision more proactively before objectives to scout for threats and avoid unnecessary deaths during engages.",
+    "draft_contradictions": 1,
+    "has_number": true,
+    "word_count": 130,
+    "latency_draft": 2.89,
+    "match_anchors": 3,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 1,
+        "shipped_contradictions": 1,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "CONTRADICTION: 'kill participation' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 2.87
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5542528643",
+    "champion": "Lissandra",
+    "position": "MIDDLE",
+    "win": false,
+    "above_avg": "CS/min (8.5 vs 7.9), damage share (28.7 vs 22.3)",
+    "below_avg": "KDA (0.4 vs 4.0), vision (15.0 vs 23.0), kill participation (42.9 vs 48.3), deaths (7.0 vs 4.9)",
+    "draft": "Main Diagnosis: Evidence: KDA of 0.43. Meaning: Your low KDA indicates that you are getting caught out too often and not contributing effectively to team fights. Action: Focus on positioning and avoid overextending to reduce deaths in future games.\n\nLane Phase: Evidence: CS/min of 8.5. Meaning: Your CS is above average, indicating good farming but may lack pressure on the map. Action: Look to roam more frequently after pushing waves to assist teammates and secure objectives.\n\nThreat Handling: Evidence: 7 deaths against a hard engage champion (Vi). Meaning: The threat of Vi's engage likely forced you into defensive play, impacting your ability to deal damage. Action: Use your spells defensively to zone Vi and maintain safer positioning during skirmishes.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 119,
+    "latency_draft": 2.45,
+    "match_anchors": 3,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5541408837",
+    "champion": "Velkoz",
+    "position": "BOTTOM",
+    "win": false,
+    "above_avg": "damage share (25.6 vs 23.6)",
+    "below_avg": "KDA (1.9 vs 3.3), CS/min (7.4 vs 7.8), vision (17.0 vs 17.7), kill participation (46.4 vs 47.9), deaths (7.0 vs 5.7)",
+    "draft": "Main Diagnosis: Evidence: KDA of 1.86 is significantly below the Challenger average of 3.3. Meaning: Your high death count indicates poor positioning during fights, leading to low-quality participation. Action: Focus on maintaining safer positioning in team fights to reduce deaths and improve overall KDA.\n\nLane Phase: Evidence: CS/min of 7.4 is below the Challenger average of 7.8. Meaning: You struggled to maintain consistent farm, which impacts your item timing and overall power. Action: Prioritize last-hitting minions more effectively to improve your CS/min and overall gold income.\n\nThreat Handling: Evidence: The enemy has a hard engage threat in Vi, which contributed to your 7 deaths. Meaning: You need to adjust your spacing and spell usage to avoid being caught by her engage. Action: Hold your crowd control spells until Vi commits to an engage to maximize your survivability and damage output.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 140,
+    "latency_draft": 3.78,
+    "match_anchors": 3,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5530187950",
+    "champion": "Rakan",
+    "position": "UTILITY",
+    "win": false,
+    "above_avg": "CS/min (1.9 vs 1.1), damage share (10.6 vs 8.2), deaths (1.0 vs 5.3)",
+    "below_avg": "KDA (0.0 vs 4.3), vision (1.0 vs 83.5), kill participation (0.0 vs 59.7)",
+    "draft": "Main Diagnosis: Evidence: KDA of 0.0 and kill participation of 0.0%. Meaning: You did not contribute to team fights or objectives, indicating a lack of engagement with your team. Action: Focus on positioning with teammates and using your abilities to initiate or peel during skirmishes.\n\nLane Phase: Evidence: CS/min of 1.9. Meaning: Your farming is above average, but you were not involved in any kills or assists. Action: Prioritize roaming to assist your ADC or mid-laner to increase kill participation.\n\nThreat Handling: Evidence: Enemy champions include hard engage threats like Vi. Meaning: You need to be more cautious when entering fog and should use your abilities to check brushes rather than face-checking. Action: Always move with teammates or use your long-range spells to scout before engaging in risky areas.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 129,
+    "latency_draft": 3.75,
+    "match_anchors": 2,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5544648658",
+    "champion": "Ornn",
+    "position": "TOP",
+    "win": true,
+    "above_avg": "CS/min (7.8 vs 6.8), damage share (23.3 vs 18.2), deaths (2.0 vs 3.9)",
+    "below_avg": "KDA (4.5 vs 5.0), vision (14.0 vs 21.0), kill participation (36.0 vs 40.9)",
+    "draft": "Main Diagnosis: Evidence: KDA of 4.5 is below the Challenger average of 5.0. Meaning: While you contributed to team fights, your deaths indicate a need for improved positioning during engagements. Action: Focus on maintaining safer positioning in team fights to reduce deaths while still contributing to kill participation.\n\nLane Phase: Evidence: CS/min of 7.8 is above the Challenger average of 6.8. Meaning: You effectively pressured your lane and maintained good farm. Action: Continue to prioritize wave management to maintain lane pressure and deny the enemy farm.\n\nThreat Handling: Evidence: The enemy has a hard engage threat with Vi. Meaning: This requires careful spacing and vision control to avoid being caught out. Action: Use long-range spells to check brushes before objectives and coordinate vision placement with teammates to mitigate Vi's engage potential.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 131,
+    "latency_draft": 2.44,
+    "match_anchors": 2,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5541431843",
+    "champion": "Sejuani",
+    "position": "JUNGLE",
+    "win": false,
+    "above_avg": "vision (35.0 vs 26.7), kill participation (62.1 vs 54.2), damage share (22.1 vs 19.9), deaths (5.0 vs 5.1)",
+    "below_avg": "KDA (3.6 vs 4.7), CS/min (6.4 vs 7.2)",
+    "draft": "Main Diagnosis: Evidence: KDA of 3.6 is below the Challenger average of 4.7. Meaning: Your participation in fights resulted in too many deaths, indicating low-quality engagements. Action: Focus on positioning and timing to avoid unnecessary deaths in future skirmishes.\n\nLane Phase: Evidence: unclear from available data. Meaning: unclear from available data. Action: unclear from available data.\n\nThreat Handling: Evidence: You faced heavy CC from the enemy team. Meaning: The threat of being locked down required more cautious spell usage and positioning. Action: Hold your ultimate until you can guarantee a successful engage without being countered by enemy CC.",
+    "draft_contradictions": 1,
+    "has_number": true,
+    "word_count": 98,
+    "latency_draft": 2.99,
+    "match_anchors": 1,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [
+      "GENERIC: report cites only 1 fact(s) from this match (need 2) \u2014 it would read the same for a different game"
+    ],
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "may critique an above-average metric",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 2.06
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "CONTRADICTION: 'deaths' is ABOVE the Challenger benchmark (a strength) but the output criticizes it near that mention \u2014 rewrite as a strength.",
+        "repaired": true,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 3.16
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5543661555",
+    "champion": "Yone",
+    "position": "MIDDLE",
+    "win": true,
+    "above_avg": "kill participation (39.5 vs 38.3), damage share (24.6 vs 22.8), deaths (6.0 vs 6.4)",
+    "below_avg": "KDA (2.5 vs 3.0), CS/min (7.7 vs 8.1), vision (17.0 vs 20.1)",
+    "draft": "Main Diagnosis: Evidence: KDA of 2.5 is below the Challenger average of 3.0. Meaning: You had a decent kill participation but struggled to stay alive, indicating risky positioning or decision-making in fights. Action: Focus on positioning during skirmishes to avoid unnecessary deaths, especially against hard engage threats like Vi.\n\nLane Phase: Evidence: CS/min of 7.7 is below the Challenger average of 8.1. Meaning: You may have missed opportunities to farm effectively, impacting your gold and item progression. Action: Prioritize last-hitting minions more consistently to improve your CS/min in the next game.\n\nThreat Handling: Evidence: You faced a hard engage threat (Vi) and had 6 deaths. Meaning: The presence of Vi likely pressured your positioning and spell usage, leading to more deaths than necessary. Action: Use your long-range spells to check brushes and maintain vision control before objectives to mitigate Vi's threat.",
+    "draft_contradictions": 1,
+    "has_number": true,
+    "word_count": 141,
+    "latency_draft": 3.13,
+    "match_anchors": 3,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 1,
+        "shipped_contradictions": 1,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "CONTRADICTION: 'kill participation' is ABOVE the Challenger benchmark (a strength) but the output criticizes it near that mention \u2014 rewrite as a strength.",
+        "repaired": true,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 3.6
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5535725144",
+    "champion": "Caitlyn",
+    "position": "BOTTOM",
+    "win": false,
+    "above_avg": "CS/min (8.6 vs 8.2), vision (30.0 vs 18.7), kill participation (57.7 vs 47.3), damage share (29.3 vs 22.8)",
+    "below_avg": "KDA (2.1 vs 2.9), deaths (7.0 vs 5.1)",
+    "draft": "Main Diagnosis: Evidence: KDA of 2.14 is below the Challenger average of 2.9. Meaning: Your deaths indicate low-quality fight participation, risking your team's chances. Action: Focus on positioning to avoid unnecessary deaths, especially against hard engage threats like Vi.\n\nLane Phase: Evidence: Unclear from available data. Meaning: Unclear. Action: Unclear from available data.\n\nThreat Handling: Evidence: You faced a hard engage threat (Vi) and had 7 deaths. Meaning: This threat should have prompted more cautious positioning and spell usage. Action: Hold your spells for defensive play and use vision to check brushes before entering risky areas.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 96,
+    "latency_draft": 3.29,
+    "match_anchors": 2,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5530286659",
+    "champion": "Morgana",
+    "position": "UTILITY",
+    "win": true,
+    "above_avg": "CS/min (1.2 vs 1.1), vision (79.0 vs 74.2), deaths (5.0 vs 5.7)",
+    "below_avg": "KDA (3.8 vs 4.1), kill participation (51.4 vs 57.2), damage share (6.4 vs 11.4)",
+    "draft": "Main Diagnosis: Evidence: KDA of 1/5/18 indicates a high death count. Meaning: While you contributed to kills, your deaths suggest risky positioning or decision-making. Action: Focus on positioning behind your carries and using your spells to peel rather than engaging directly in fights.\n\nLane Phase: Evidence: unclear from available data. Meaning: unclear from available data. Action: unclear from available data.\n\nThreat Handling: Evidence: Facing a hard engage threat (Vi) and heavy CC from the enemy comp. Meaning: You need to prioritize vision with teammates before objectives and avoid face-checking brushes. Action: Use your long-range spells to check unsafe areas before entering fog of war.",
+    "draft_contradictions": 1,
+    "has_number": true,
+    "word_count": 104,
+    "latency_draft": 2.41,
+    "match_anchors": 3,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 1,
+        "shipped_contradictions": 1,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "CONTRADICTION: 'kda' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 3.51
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5525341297",
+    "champion": "Sion",
+    "position": "TOP",
+    "win": false,
+    "above_avg": "CS/min (8.2 vs 7.6), deaths (2.0 vs 4.7)",
+    "below_avg": "KDA (1.5 vs 3.3), vision (7.0 vs 20.6), kill participation (20.0 vs 34.0), damage share (14.1 vs 18.8)",
+    "draft": "Main Diagnosis: Evidence: KDA of 1.5 (below Challenger average of 3.3). Meaning: Your low KDA indicates you are dying too frequently relative to your contributions. Action: Focus on positioning and avoiding unnecessary engagements to reduce deaths in the next game.\n\nLane Phase: Evidence: CS/min of 8.2 (above Challenger average of 7.6). Meaning: You maintained good farm, which indicates lane pressure was stable. Action: Continue to prioritize wave management and avoid overextending without vision.\n\nThreat Handling: Evidence: Enemy hard engage threat (Vi) and low vision score of 7 (below Challenger average of 20.6). Meaning: Insufficient vision against Vi increased your risk of being caught out. Action: Invest in vision wards before objectives to better track enemy movements and avoid surprise engages.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 120,
+    "latency_draft": 2.59,
+    "match_anchors": 4,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5530546945",
+    "champion": "LeeSin",
+    "position": "JUNGLE",
+    "win": true,
+    "above_avg": "KDA (6.5 vs 5.4), CS/min (7.3 vs 6.9), damage share (22.1 vs 18.9), deaths (4.0 vs 4.8)",
+    "below_avg": "vision (20.0 vs 30.0), kill participation (55.3 vs 57.4)",
+    "draft": "Main Diagnosis: Evidence: Vision score of 20 (vs. 30.0 average). Meaning: Your vision control was below average, which is critical against hard engage threats. Action: Prioritize placing wards in key areas before objectives to ensure safer engages and better map awareness.\n\nLane Phase: Evidence: Unclear from available data. Meaning: Unclear. Action: Unclear from available data.\n\nThreat Handling: Evidence: Enemy hard engage champion (Vi). Meaning: The threat of Vi's engage necessitates more cautious positioning and spell usage. Action: Hold your abilities to counter Vi's engage rather than using them aggressively when she is nearby.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 93,
+    "latency_draft": 4.63,
+    "match_anchors": 1,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [
+      "GENERIC: report cites only 1 fact(s) from this match (need 2) \u2014 it would read the same for a different game"
+    ],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5522222909",
+    "champion": "Viktor",
+    "position": "MIDDLE",
+    "win": false,
+    "above_avg": "CS/min (8.1 vs 8.0), vision (20.0 vs 18.6), damage share (27.1 vs 24.3)",
+    "below_avg": "KDA (1.1 vs 3.7), kill participation (30.8 vs 41.2), deaths (7.0 vs 4.6)",
+    "draft": "Main Diagnosis: Evidence: KDA of 1.14 (5/7/3) indicates a high death count. Meaning: Your low kill participation and high deaths suggest you were not effectively contributing to team fights. Action: Focus on positioning and spell usage to avoid being caught out, especially against hard engage threats like Vi.\n\nLane Phase: Evidence: CS/min of 8.1 is above average, but deaths indicate lane pressure was not effectively managed. Meaning: You were able to farm well but likely struggled to stabilize or pressure the lane. Action: Prioritize safer positioning and warding to avoid unnecessary deaths while farming.\n\nThreat Handling: Evidence: Deaths against Vi indicate poor handling of her engage potential. Meaning: You need to adjust your spacing and spell usage to avoid being caught by her burst. Action: Hold your spells for defensive purposes when you suspect Vi is nearby, and ensure vision is set up before objectives.",
+    "draft_contradictions": 3,
+    "has_number": true,
+    "word_count": 145,
+    "latency_draft": 3.66,
+    "match_anchors": 5,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "contains vague coaching language",
+        "repaired": true,
+        "passed_final": true,
+        "final_contradictions": 3,
+        "shipped_contradictions": 3,
+        "fell_back_to_template": false,
+        "latency_repair": 2.68
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "contains vague coaching language; CONTRADICTION: 'kda' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.; CONTRADICTION: 'kill participation' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.; CONTRADICTION: 'deaths' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 3,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 3.2
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5530545433",
+    "champion": "Ezreal",
+    "position": "BOTTOM",
+    "win": true,
+    "above_avg": "KDA (16.0 vs 3.5), CS/min (8.7 vs 7.8), vision (20.0 vs 17.7), kill participation (59.3 vs 46.1), damage share (26.8 vs 25.0), deaths (1.0 vs 5.5)",
+    "below_avg": "none listed",
+    "draft": "Main Diagnosis: Evidence: KDA of 8/1/8. Meaning: Your strong KDA indicates effective positioning and decision-making in fights, but be cautious of overextending. Action: Focus on maintaining this positioning while ensuring you have vision control before engaging in fights.\n\nLane Phase: Evidence: CS/min of 8.7. Meaning: Your farming is above average, indicating good lane control and pressure. Action: Continue to prioritize last-hitting and avoid unnecessary trades to maintain this CS rate.\n\nThreat Handling: Evidence: Enemy hard engage threat (Vi). Meaning: The presence of Vi requires you to be more cautious with your positioning and spell usage during skirmishes. Action: Hold your Arcane Shift until Vi commits to engage to maximize your escape potential.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 112,
+    "latency_draft": 2.76,
+    "match_anchors": 3,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5527029619",
+    "champion": "Senna",
+    "position": "UTILITY",
+    "win": false,
+    "above_avg": "vision (69.0 vs 68.7)",
+    "below_avg": "KDA (1.3 vs 4.5), CS/min (1.1 vs 1.4), kill participation (45.0 vs 59.4), damage share (11.8 vs 17.0), deaths (7.0 vs 5.7)",
+    "draft": "Main Diagnosis: Evidence: KDA of 1/7/8 indicates a high death count relative to kill participation. Meaning: You are engaging in fights without adequate positioning or peel, leading to unnecessary deaths. Action: Focus on positioning behind your frontline and using your abilities to peel for carries instead of engaging directly.\n\nLane Phase: Evidence: CS/min of 1.1 is below the Challenger average of 1.4. Meaning: You are not applying enough pressure in lane, which may lead to missed opportunities for gold and experience. Action: Prioritize last-hitting minions and avoid unnecessary trades to improve your CS.\n\nThreat Handling: Evidence: The enemy has a hard engage champion (Vi) that can burst you down. Meaning: You need to adjust your positioning and vision to avoid being caught out by her engage. Action: Use your long-range spells to check brushes before entering them and maintain vision with teammates around objectives.",
+    "draft_contradictions": 2,
+    "has_number": true,
+    "word_count": 144,
+    "latency_draft": 3.69,
+    "match_anchors": 4,
+    "template_leaks": 0,
+    "role_nonsense": 1,
+    "content_issues": [
+      "ROLE NONSENSE: tells a support to focus on last hitting / farm efficiency"
+    ],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 2,
+        "shipped_contradictions": 2,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "CONTRADICTION: 'kda' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.; CONTRADICTION: 'kill participation' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 2,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 2.85
+      }
+    }
+  }
+]

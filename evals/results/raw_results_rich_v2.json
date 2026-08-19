@@ -1,0 +1,1213 @@
+[
+  {
+    "match_id": "NA1_5529473493",
+    "champion": "Jayce",
+    "position": "TOP",
+    "win": false,
+    "above_avg": "CS/min (8.5 vs 8.1), kill participation (76.2 vs 40.4), damage share (46.3 vs 26.5), deaths (6.0 vs 6.0)",
+    "below_avg": "KDA (2.7 vs 3.0), vision (22.0 vs 25.9)",
+    "draft": "Main Diagnosis: Evidence: KDA of 2.67. Meaning: While you had high kill participation, your deaths indicate risky positioning or poor decision-making in fights. Action: After each death, review your positioning in teamfights to target reducing deaths to 4 or fewer next game.\n\nLane Phase: Evidence: CS at minute 10: 80. Meaning: You had a strong laning phase with a +58 CS lead, indicating good pressure. Action: Recall by minute 10 with 1300g to target first item by 12:00.\n\nThreat Handling: Evidence: Enemy hard engage champion (Vi) and 6 deaths. Meaning: The threat of Vi's engage likely pressured your positioning and spell usage in fights. Action: Before each objective spawn, communicate with teammates to set vision and avoid dying to engage, targeting 2 control wards placed per game.",
+    "draft_contradictions": 3,
+    "has_number": true,
+    "word_count": 127,
+    "latency_draft": 6.46,
+    "match_anchors": 6,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each death, review your positioning in teamfights to target reducing deaths to 4 or fewer next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Recall by minute 10 with 1300g to target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each objective spawn, communicate with teammates to set vision and avoid dying to engage, targeting 2 control wards placed per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      }
+    ],
+    "actionability_issues": [
+      "NOT ACTIONABLE: no Action tells the player what to actually do next game. e.g. 'After each death, review your positioning in teamfights to target redu' needs a measurable target (2 control wards, under 3 deaths, 5 CS/min)"
+    ],
+    "configs": {
+      "baseline": {
+        "passed_first": false,
+        "feedback": "may critique an above-average metric",
+        "repaired": true,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 2.7
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "CONTRADICTION: 'kill participation' is ABOVE the Challenger benchmark (a strength) but the output criticizes it near that mention \u2014 rewrite as a strength.; CONTRADICTION: 'deaths' is ABOVE the Challenger benchmark (a strength) but the output criticizes it near that mention \u2014 rewrite as a strength.; CONTRADICTION: 'kda' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 1,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 3.03
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5528740260",
+    "champion": "Naafiri",
+    "position": "JUNGLE",
+    "win": true,
+    "above_avg": "KDA (4.1 vs 3.8), kill participation (70.7 vs 49.0), damage share (21.0 vs 19.5)",
+    "below_avg": "CS/min (6.4 vs 7.2), vision (19.0 vs 19.5), deaths (7.0 vs 5.2)",
+    "draft": "Main Diagnosis: Evidence: KDA of 12/7/17. Meaning: While your kill participation is strong, the high death count indicates risky positioning during fights. Action: After each death, review your positioning in team fights to reduce deaths to a target of 5 or fewer next game.\n\nLane Phase: Evidence: CS at minute 10: 3. Meaning: Your early jungle pathing did not allow for effective CS accumulation, impacting your gold and XP. Action: Before minute 10, prioritize securing at least 30 CS by focusing on jungle camps instead of ganking.\n\nThreat Handling: Evidence: Deaths: 7. Meaning: The high number of deaths suggests you were caught out by the enemy's hard engage. Action: Before each objective fight, communicate with your team to set vision in the enemy jungle and place at least 2 control wards to mitigate threats.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 134,
+    "latency_draft": 2.67,
+    "match_anchors": 3,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each death, review your positioning in team fights to reduce deaths to a target of 5 or fewer next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before minute 10, prioritize securing at least 30 CS by focusing on jungle camps instead of ganking.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      },
+      {
+        "text": "Before each objective fight, communicate with your team to set vision in the enemy jungle and place at least 2 control wards to mitigate threats.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      }
+    ],
+    "actionability_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5528725719",
+    "champion": "Mel",
+    "position": "MIDDLE",
+    "win": false,
+    "above_avg": "vision (21.0 vs 20.1), kill participation (65.0 vs 46.0), damage share (26.3 vs 24.9), deaths (5.0 vs 6.0)",
+    "below_avg": "KDA (2.6 vs 3.5), CS/min (8.0 vs 8.1)",
+    "draft": "Main Diagnosis: Evidence: KDA of 2.6. Meaning: Your kill participation is high, but your deaths are too frequent, indicating risky positioning or decision-making in fights. Action: After each death, review your positioning in the last fight and aim to reduce deaths to 3 or fewer next game.\n\nLane Phase: Evidence: CS at minute 10: 95. Meaning: You had a slight CS lead, but you didn't convert that into a gold or XP advantage, indicating missed opportunities to pressure your opponent. Action: Before minute 10, aim to secure a gold lead of at least 500g over your opponent.\n\nThreat Handling: Evidence: Enemy hard engage champion (Vi) and 5 deaths. Meaning: The threat of Vi's engage likely forced you into a more defensive playstyle, impacting your ability to roam and secure objectives. Action: Before each objective spawn, communicate with your team to set vision in the enemy jungle and place at least 2 control wards.",
+    "draft_contradictions": 1,
+    "has_number": true,
+    "word_count": 153,
+    "latency_draft": 4.09,
+    "match_anchors": 5,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each death, review your positioning in the last fight and aim to reduce deaths to 3 or fewer next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before minute 10, aim to secure a gold lead of at least 500g over your opponent.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      },
+      {
+        "text": "Before each objective spawn, communicate with your team to set vision in the enemy jungle and place at least 2 control wards.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      }
+    ],
+    "actionability_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 1,
+        "shipped_contradictions": 1,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "CONTRADICTION: 'kda' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.",
+        "repaired": true,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 4.18
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5529423248",
+    "champion": "Yunara",
+    "position": "BOTTOM",
+    "win": true,
+    "above_avg": "KDA (3.8 vs 3.8), CS/min (8.5 vs 8.3), vision (23.0 vs 20.0), kill participation (55.9 vs 48.5), damage share (32.5 vs 27.2), deaths (5.0 vs 5.4)",
+    "below_avg": "none listed",
+    "draft": "Main Diagnosis: Evidence: KDA of 10/5/9 shows strong kill participation and damage output. Meaning: Your ability to contribute to kills is solid, but the 5 deaths indicate risky positioning or overextensions. Action: After each death, review your positioning in fights to target reducing deaths to 3 next game.\n\nLane Phase: Evidence: CS at minute 10 was 85 with a peak CS lead of +33. Meaning: You exerted strong lane pressure, but the gold/XP advantage was 0, indicating missed opportunities to capitalize on your lead. Action: Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.\n\nThreat Handling: Evidence: The enemy has a hard engage champion (Vi) and you had 5 deaths. Meaning: The threat of Vi likely pressured your positioning and spell usage, leading to unnecessary deaths. Action: Before each dragon spawn, communicate with your support to set vision in the enemy jungle; target placing 2 control wards.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 155,
+    "latency_draft": 4.04,
+    "match_anchors": 8,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each death, review your positioning in fights to target reducing deaths to 3 next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each dragon spawn, communicate with your support to set vision in the enemy jungle; target placing 2 control wards.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      }
+    ],
+    "actionability_issues": [
+      "NOT ACTIONABLE: no Action tells the player what to actually do next game. e.g. 'After each death, review your positioning in fights to target reducing' needs a measurable target (2 control wards, under 3 deaths, 5 CS/min)"
+    ],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5527887847",
+    "champion": "Anivia",
+    "position": "UTILITY",
+    "win": true,
+    "above_avg": "KDA (9.5 vs 4.1), vision (116.0 vs 81.0), kill participation (73.1 vs 52.4), deaths (2.0 vs 5.0)",
+    "below_avg": "CS/min (1.2 vs 1.4), damage share (11.2 vs 14.6)",
+    "draft": "Main Diagnosis: Evidence: KDA of 9.5 with 15 assists. Meaning: Your kill participation is excellent, indicating strong team involvement. Action: Before each major objective, communicate with teammates to ensure you are positioned to assist in fights \u2014 target 80% kill participation next game.\n\nLane Phase: Evidence: CS at minute 10: 13. Meaning: You struggled to pressure your lane opponent effectively. Action: Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.\n\nThreat Handling: Evidence: Enemy champion Vi presents a hard engage threat. Meaning: You need to prioritize vision and positioning to avoid being caught out. Action: Before each objective spawn, place a control ward in the enemy raptor camp \u2014 buy 2 per game.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 121,
+    "latency_draft": 3.3,
+    "match_anchors": 4,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "Before each major objective, communicate with teammates to ensure you are positioned to assist in fights \u2014 target 80% kill participation next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      },
+      {
+        "text": "Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each objective spawn, place a control ward in the enemy raptor camp \u2014 buy 2 per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      }
+    ],
+    "actionability_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5528967907",
+    "champion": "Volibear",
+    "position": "TOP",
+    "win": true,
+    "above_avg": "CS/min (7.7 vs 7.4), deaths (2.0 vs 5.5)",
+    "below_avg": "KDA (2.5 vs 2.9), vision (12.0 vs 22.4), kill participation (27.8 vs 35.7), damage share (19.4 vs 22.0)",
+    "draft": "Main Diagnosis: Evidence: KDA of 2.5 is below the Challenger average of 2.9. Meaning: You need to focus on survival to maintain a higher KDA and contribute more effectively in fights. Action: After each death, review your positioning in fights and aim to reduce deaths to 1 or fewer per game.\n\nLane Phase: Evidence: CS at minute 10 was 57, indicating solid farm. Meaning: You applied pressure well but could have capitalized more on your lead. Action: Before minute 12, push for an additional 20 CS while maintaining lane control.\n\nThreat Handling: Evidence: You faced a hard engage threat (Vi) without placing control wards. Meaning: This lack of vision likely increased your risk of being caught out. Action: Before each objective spawn, place 2 control wards in the enemy jungle to improve vision and safety.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 135,
+    "latency_draft": 3.2,
+    "match_anchors": 6,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each death, review your positioning in fights and aim to reduce deaths to 1 or fewer per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before minute 12, push for an additional 20 CS while maintaining lane control.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      },
+      {
+        "text": "Before each objective spawn, place 2 control wards in the enemy jungle to improve vision and safety.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      }
+    ],
+    "actionability_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5528905679",
+    "champion": "Gwen",
+    "position": "JUNGLE",
+    "win": false,
+    "above_avg": "deaths (5.0 vs 5.1)",
+    "below_avg": "KDA (0.0 vs 4.7), CS/min (5.9 vs 7.2), vision (7.0 vs 26.7), kill participation (0.0 vs 54.2), damage share (16.8 vs 19.9)",
+    "draft": "Main Diagnosis: Evidence: KDA of 0/5/0. Meaning: You are not participating in fights effectively and are dying too often without contributing to kills. Action: After each death, review your positioning and decision-making to target reducing deaths to 2 or fewer next game.\n\nLane Phase: Evidence: CS at minute 10: 6. Meaning: You are not maintaining adequate jungle CS, which is impacting your gold and experience. Action: Before minute 10, aim to achieve at least 30 CS by focusing on efficient jungle clear paths.\n\nThreat Handling: Evidence: Deaths: 5. Meaning: You are not managing enemy threats effectively, leading to unnecessary deaths. Action: Before each objective spawn, use vision to check brushes and avoid dying more than 2 times to enemy hard engage champions next game.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 124,
+    "latency_draft": 3.29,
+    "match_anchors": 4,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each death, review your positioning and decision-making to target reducing deaths to 2 or fewer next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before minute 10, aim to achieve at least 30 CS by focusing on efficient jungle clear paths.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      },
+      {
+        "text": "Before each objective spawn, use vision to check brushes and avoid dying more than 2 times to enemy hard engage champions next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      }
+    ],
+    "actionability_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5528349472",
+    "champion": "Riven",
+    "position": "MIDDLE",
+    "win": false,
+    "above_avg": "CS/min (8.6 vs 7.6)",
+    "below_avg": "KDA (1.0 vs 3.6), vision (18.0 vs 20.0), kill participation (27.3 vs 43.9), damage share (13.9 vs 23.1), deaths (6.0 vs 5.3)",
+    "draft": "Main Diagnosis: Evidence: KDA of 1.0. Meaning: Your low kill participation and high deaths indicate poor survival and fight quality. Action: After each death, review your positioning and target a maximum of 3 deaths in the next game.\n\nLane Phase: Evidence: CS at minute 10: 67. Meaning: You maintained decent CS but lacked a gold/XP advantage, indicating missed opportunities to pressure your opponent. Action: Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.\n\nThreat Handling: Evidence: Deaths: 6. Meaning: The enemy's hard engage threat likely forced you into unfavorable positions, leading to unnecessary deaths. Action: Before each objective spawn, communicate with your team to set vision and target placing 2 control wards per game.",
+    "draft_contradictions": 2,
+    "has_number": true,
+    "word_count": 122,
+    "latency_draft": 2.59,
+    "match_anchors": 2,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each death, review your positioning and target a maximum of 3 deaths in the next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      },
+      {
+        "text": "Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each objective spawn, communicate with your team to set vision and target placing 2 control wards per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      }
+    ],
+    "actionability_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 2,
+        "shipped_contradictions": 2,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": false,
+        "feedback": "CONTRADICTION: 'kill participation' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.; CONTRADICTION: 'deaths' is BELOW the Challenger benchmark (a gap) but the output praises it near that mention \u2014 do not call a gap a strength.",
+        "repaired": true,
+        "passed_final": false,
+        "final_contradictions": 2,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": true,
+        "latency_repair": 2.8
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5529163238",
+    "champion": "Zyra",
+    "position": "BOTTOM",
+    "win": true,
+    "above_avg": "KDA (3.6 vs 3.3), CS/min (8.1 vs 7.8), vision (23.0 vs 17.7), kill participation (61.0 vs 47.9), damage share (36.5 vs 23.6)",
+    "below_avg": "deaths (7.0 vs 5.7)",
+    "draft": "Main Diagnosis: Evidence: 7 deaths. Meaning: You are at risk of being caught out, especially against hard engage champions like Vi. Action: After each death, review your positioning and target reducing deaths to 5 in the next game.\n\nLane Phase: Evidence: CS at minute 10: 64. Meaning: You maintained pressure in lane, but could have capitalized more on your lead. Action: Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.\n\nThreat Handling: Evidence: Enemy champion Vi. Meaning: The threat of hard engage should have influenced your positioning and spell usage more defensively. Action: Before each objective spawn, use long-range spells to check unsafe brushes; target 3 checks per game.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 117,
+    "latency_draft": 2.77,
+    "match_anchors": 4,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each death, review your positioning and target reducing deaths to 5 in the next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each objective spawn, use long-range spells to check unsafe brushes; target 3 checks per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      }
+    ],
+    "actionability_issues": [
+      "NOT ACTIONABLE: no Action tells the player what to actually do next game. e.g. 'After each death, review your positioning and target reducing deaths t' needs a measurable target (2 control wards, under 3 deaths, 5 CS/min)"
+    ],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5529344637",
+    "champion": "Jayce",
+    "position": "TOP",
+    "win": true,
+    "above_avg": "KDA (5.2 vs 3.0), CS/min (8.5 vs 8.1), kill participation (53.8 vs 40.4), damage share (30.8 vs 26.5), deaths (4.0 vs 6.0)",
+    "below_avg": "vision (17.0 vs 25.9)",
+    "draft": "Main Diagnosis: Evidence: Vision score of 17. Meaning: Your vision control is significantly below the Challenger average, which can lead to unsafe positioning against hard engage threats. Action: Before each dragon spawn, place a control ward in the enemy raptor camp \u2014 target 2 control wards per game.\n\nLane Phase: Evidence: CS at minute 10: 92. Meaning: You established a strong lane presence with a +41 CS lead, indicating effective pressure. Action: Recall by minute 12 with 1300g instead of pushing one more wave; target first item by 12:00.\n\nThreat Handling: Evidence: Enemy champion Vi as a hard engage threat. Meaning: The presence of Vi requires careful spacing and vision to avoid being caught out. Action: Before each objective fight, use your long-range spells to check unsafe brushes \u2014 target 3 checks per game.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 134,
+    "latency_draft": 2.96,
+    "match_anchors": 5,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "Before each dragon spawn, place a control ward in the enemy raptor camp \u2014 target 2 control wards per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Recall by minute 12 with 1300g instead of pushing one more wave; target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each objective fight, use your long-range spells to check unsafe brushes \u2014 target 3 checks per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      }
+    ],
+    "actionability_issues": [
+      "NOT ACTIONABLE: no Action tells the player what to actually do next game. e.g. 'Before each dragon spawn, place a control ward in the enemy raptor cam' needs a measurable target (2 control wards, under 3 deaths, 5 CS/min)"
+    ],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5529091256",
+    "champion": "Graves",
+    "position": "JUNGLE",
+    "win": true,
+    "above_avg": "KDA (17.0 vs 4.8), CS/min (9.5 vs 8.1), kill participation (68.0 vs 54.8), deaths (0.0 vs 4.9)",
+    "below_avg": "vision (20.0 vs 27.1), damage share (22.2 vs 22.7)",
+    "draft": "Main Diagnosis: Evidence: KDA of 11.0 indicates strong kill participation. Meaning: You effectively contributed to team fights without dying, showcasing your impact. Action: Before each major objective, ensure to have at least 3 teammates nearby to coordinate and secure the area.\n\nLane Phase: Evidence: CS at minute 10 was 1, indicating unreliable farming. Meaning: You were unable to farm effectively during the early game. Action: Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.\n\nThreat Handling: Evidence: Enemy hard engage champion (Vi) was present. Meaning: You need to adjust your positioning and vision to avoid being caught out by her engage. Action: Before each objective spawn, place a control ward in the enemy raptor camp \u2014 buy 2 per game.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 128,
+    "latency_draft": 2.44,
+    "match_anchors": 4,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "Before each major objective, ensure to have at least 3 teammates nearby to coordinate and secure the area.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      },
+      {
+        "text": "Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each objective spawn, place a control ward in the enemy raptor camp \u2014 buy 2 per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      }
+    ],
+    "actionability_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5529066581",
+    "champion": "Katarina",
+    "position": "MIDDLE",
+    "win": true,
+    "above_avg": "KDA (9.0 vs 3.7), CS/min (7.8 vs 7.3), vision (27.0 vs 18.9), kill participation (92.3 vs 48.4), damage share (46.6 vs 24.8), deaths (4.0 vs 5.5)",
+    "below_avg": "none listed",
+    "draft": "Main Diagnosis: Evidence: KDA of 25/4/11 indicates exceptional kill participation and survival. Meaning: Your ability to secure kills while minimizing deaths is a significant strength, showcasing your effectiveness in team fights. Action: After each team fight, assess your positioning and aim for a maximum of 2 deaths per game.\n\nLane Phase: Evidence: CS at minute 10 was 57, with a peak CS lead of +29. Meaning: You exerted strong lane pressure, allowing for aggressive plays and solo kills. Action: Before minute 10, aim to secure at least 70 CS to maintain lane dominance.\n\nThreat Handling: Evidence: Faced hard engage threats like Vi, resulting in 4 deaths. Meaning: The threat of Vi's engage necessitated better spacing and awareness during skirmishes. Action: Before each objective fight, communicate with your team to establish vision control and place 2 control wards in key areas.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 140,
+    "latency_draft": 3.56,
+    "match_anchors": 6,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each team fight, assess your positioning and aim for a maximum of 2 deaths per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      },
+      {
+        "text": "Before minute 10, aim to secure at least 70 CS to maintain lane dominance.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      },
+      {
+        "text": "Before each objective fight, communicate with your team to establish vision control and place 2 control wards in key areas.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      }
+    ],
+    "actionability_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5526914432",
+    "champion": "Yunara",
+    "position": "BOTTOM",
+    "win": false,
+    "above_avg": "deaths (5.0 vs 5.4)",
+    "below_avg": "KDA (0.2 vs 3.8), CS/min (7.0 vs 8.3), vision (11.0 vs 20.0), kill participation (10.0 vs 48.5), damage share (12.2 vs 27.2)",
+    "draft": "Main Diagnosis: Evidence: KDA of 1/5/0. Meaning: Your low KDA indicates poor survival and positioning during fights. Action: After each death, review your positioning in team fights to target reducing deaths to 3 or fewer next game.\n\nLane Phase: Evidence: CS at minute 10: 46. Meaning: You maintained a slight CS lead but did not capitalize on it for a gold advantage. Action: Recall by minute 10 with 1300g to target first item by 12:00.\n\nThreat Handling: Evidence: Enemy champion Vi poses a hard engage threat. Meaning: Vi's presence requires you to maintain safer positioning and utilize vision more effectively. Action: Before each objective spawn, place a control ward in the enemy raptor camp \u2014 target 2 per game.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 119,
+    "latency_draft": 2.35,
+    "match_anchors": 5,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each death, review your positioning in team fights to target reducing deaths to 3 or fewer next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Recall by minute 10 with 1300g to target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each objective spawn, place a control ward in the enemy raptor camp \u2014 target 2 per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      }
+    ],
+    "actionability_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5528190237",
+    "champion": "Nami",
+    "position": "UTILITY",
+    "win": true,
+    "above_avg": "KDA (5.0 vs 4.7), vision (90.0 vs 73.5), kill participation (62.5 vs 62.1), damage share (11.1 vs 10.0), deaths (4.0 vs 5.2)",
+    "below_avg": "CS/min (0.7 vs 0.9)",
+    "draft": "Main Diagnosis: Evidence: KDA of 0/4/20 shows high kill participation but also indicates risk in positioning. Meaning: You contributed significantly to team fights but need to reduce deaths to maintain your utility. Action: After each death, review your positioning and aim to reduce deaths to 2 or fewer next game.\n\nLane Phase: Evidence: CS at minute 10 was 11, indicating low lane pressure. Meaning: You struggled to apply pressure in lane, which limited your gold and XP gain. Action: Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.\n\nThreat Handling: Evidence: The enemy has a hard engage threat (Vi) and you had 4 deaths. Meaning: The threat of Vi should have influenced your positioning and warding strategy. Action: Before each objective spawn, use long-range spells to check unsafe brushes and aim to place 3 control wards around objectives.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 146,
+    "latency_draft": 2.75,
+    "match_anchors": 7,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each death, review your positioning and aim to reduce deaths to 2 or fewer next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each objective spawn, use long-range spells to check unsafe brushes and aim to place 3 control wards around objectives.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      }
+    ],
+    "actionability_issues": [
+      "NOT ACTIONABLE: no Action tells the player what to actually do next game. e.g. 'After each death, review your positioning and aim to reduce deaths to ' needs a measurable target (2 control wards, under 3 deaths, 5 CS/min)"
+    ],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5528887370",
+    "champion": "Azir",
+    "position": "TOP",
+    "win": true,
+    "above_avg": "vision (38.0 vs 22.4), kill participation (60.0 vs 35.7), damage share (32.9 vs 22.0)",
+    "below_avg": "KDA (2.7 vs 2.9), CS/min (7.1 vs 7.4), deaths (9.0 vs 5.5)",
+    "draft": "Main Diagnosis: Evidence: KDA of 2.67, with 9 deaths. Meaning: Your survivability is a risk; you need to reduce deaths to maintain pressure. Action: After each death, review your positioning in teamfights and aim to reduce deaths to 5 or fewer next game.\n\nLane Phase: Evidence: CS at minute 10 was 90 with a peak CS lead of +52. Meaning: You exerted strong lane pressure but need to convert that into a gold advantage. Action: Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.\n\nThreat Handling: Evidence: Enemy hard engage champion Vi and 9 deaths. Meaning: The threat of Vi's engage requires more cautious positioning and vision setup. Action: Before each objective spawn, place a control ward in the enemy raptor camp \u2014 buy 2 per game.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 135,
+    "latency_draft": 2.65,
+    "match_anchors": 5,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each death, review your positioning in teamfights and aim to reduce deaths to 5 or fewer next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each objective spawn, place a control ward in the enemy raptor camp \u2014 buy 2 per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      }
+    ],
+    "actionability_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5529039508",
+    "champion": "Pantheon",
+    "position": "JUNGLE",
+    "win": false,
+    "above_avg": "deaths (2.0 vs 4.3)",
+    "below_avg": "KDA (0.5 vs 5.4), CS/min (4.4 vs 6.6), vision (3.0 vs 26.5), kill participation (20.0 vs 55.3), damage share (9.1 vs 19.0)",
+    "draft": "Main Diagnosis: Evidence: KDA of 0.5 and kill participation of 20.0%. Meaning: Your impact on the game was minimal, leading to a lack of pressure and objective control. Action: Before each dragon spawn, aim for 50% kill participation by actively ganking lanes and coordinating with teammates.\n\nLane Phase: Evidence: CS at minute 10 was 6. Meaning: You struggled to farm effectively, which limited your gold and item progression. Action: Recall by minute 10 with at least 1300 gold instead of pushing one more wave; target first item by 12:00.\n\nThreat Handling: Evidence: Facing hard engage champions like Vi without placing control wards. Meaning: You need to adjust your vision strategy to avoid being caught out by enemy engages. Action: Before each objective spawn, place a control ward in the enemy raptor camp; target 2 control wards per game.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 138,
+    "latency_draft": 3.65,
+    "match_anchors": 4,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "Before each dragon spawn, aim for 50% kill participation by actively ganking lanes and coordinating with teammates.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      },
+      {
+        "text": "Recall by minute 10 with at least 1300 gold instead of pushing one more wave; target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      },
+      {
+        "text": "Before each objective spawn, place a control ward in the enemy raptor camp; target 2 control wards per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      }
+    ],
+    "actionability_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5526978612",
+    "champion": "Akshan",
+    "position": "MIDDLE",
+    "win": true,
+    "above_avg": "KDA (15.0 vs 3.3), CS/min (8.2 vs 7.1), kill participation (62.5 vs 45.1), damage share (29.4 vs 23.6), deaths (1.0 vs 5.7)",
+    "below_avg": "vision (6.0 vs 18.2)",
+    "draft": "Main Diagnosis: Evidence: Vision score of 6. Meaning: Your vision control is significantly below the Challenger average, which can lead to unsafe positioning against hard engage threats. Action: Before each objective spawn, place 2 control wards in the river and enemy jungle entrances \u2014 target 4 control wards placed by the end of the game.\n\nLane Phase: Evidence: CS at minute 10: 80. Meaning: You maintained solid lane pressure and a gold advantage, allowing for effective roaming opportunities. Action: Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.\n\nThreat Handling: Evidence: Enemy hard engage threat (Vi) and low vision score. Meaning: The threat of Vi requires more cautious positioning and proactive vision to avoid being caught out. Action: Before each enemy jungle invade, use your long-range spells to check unsafe brushes \u2014 target 3 checks per game.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 145,
+    "latency_draft": 2.52,
+    "match_anchors": 3,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "Before each objective spawn, place 2 control wards in the river and enemy jungle entrances \u2014 target 4 control wards placed by the end of the game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each enemy jungle invade, use your long-range spells to check unsafe brushes \u2014 target 3 checks per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      }
+    ],
+    "actionability_issues": [
+      "NOT ACTIONABLE: no Action tells the player what to actually do next game. e.g. 'Before each objective spawn, place 2 control wards in the river and en' needs a measurable target (2 control wards, under 3 deaths, 5 CS/min)"
+    ],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5529017751",
+    "champion": "Anivia",
+    "position": "BOTTOM",
+    "win": false,
+    "above_avg": "kill participation (75.0 vs 47.9), damage share (30.2 vs 23.6), deaths (3.0 vs 5.7)",
+    "below_avg": "KDA (2.0 vs 3.3), CS/min (7.6 vs 7.8), vision (5.0 vs 17.7)",
+    "draft": "Main Diagnosis: Evidence: KDA of 2.0 is below the Challenger average of 3.3. Meaning: You are participating in fights but dying too often, indicating low-quality engagement. Action: After each death, review positioning and spell usage in fights to target a KDA of 3.0 next game.\n\nLane Phase: Evidence: CS at minute 10 is 66, which is below the expected benchmark. Meaning: You had a strong lead but may have overextended, leading to missed farm opportunities. Action: Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.\n\nThreat Handling: Evidence: The enemy has a hard engage champion (Vi) and you placed 0 control wards. Meaning: Lack of vision and awareness of the enemy's engage potential increased your risk of being caught out. Action: Before each objective spawn, place a control ward in the enemy raptor camp; target 2 per game.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 146,
+    "latency_draft": 3.8,
+    "match_anchors": 5,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "After each death, review positioning and spell usage in fights to target a KDA of 3.0 next game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each objective spawn, place a control ward in the enemy raptor camp; target 2 per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": true,
+        "actionable": true
+      }
+    ],
+    "actionability_issues": [],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  },
+  {
+    "match_id": "NA1_5524226466",
+    "champion": "Bard",
+    "position": "UTILITY",
+    "win": false,
+    "above_avg": "CS/min (0.9 vs 0.9), kill participation (81.8 vs 59.8), damage share (14.5 vs 13.1), deaths (2.0 vs 5.7)",
+    "below_avg": "KDA (4.5 vs 4.7), vision (62.0 vs 81.5)",
+    "draft": "Main Diagnosis: Evidence: Vision score of 62 is below the Challenger average of 81.5. Meaning: You need to prioritize vision placement to better control objectives and mitigate risks. Action: Before each objective spawn, place 2 control wards in key areas like the dragon pit and enemy jungle entrances.\n\nLane Phase: Evidence: CS at minute 10 is 11 with a gold/XP advantage of 0. Meaning: You struggled to apply pressure in lane and missed opportunities to roam effectively. Action: Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.\n\nThreat Handling: Evidence: The enemy has a hard engage threat (Vi) and you died twice. Meaning: You need to adjust your positioning and vision strategy to avoid being caught out by Vi's engage. Action: Before each objective, use your long-range spells to check unsafe brushes and avoid face-checking; target 3 successful checks per game.",
+    "draft_contradictions": 0,
+    "has_number": true,
+    "word_count": 149,
+    "latency_draft": 5.3,
+    "match_anchors": 5,
+    "template_leaks": 0,
+    "role_nonsense": 0,
+    "content_issues": [],
+    "actions": [
+      {
+        "text": "Before each objective spawn, place 2 control wards in key areas like the dragon pit and enemy jungle entrances.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Recall by minute 10 with 1300g instead of pushing one more wave; target first item by 12:00.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      },
+      {
+        "text": "Before each objective, use your long-range spells to check unsafe brushes and avoid face-checking; target 3 successful checks per game.",
+        "starts_vague": false,
+        "has_trigger": true,
+        "has_target": false,
+        "actionable": false
+      }
+    ],
+    "actionability_issues": [
+      "NOT ACTIONABLE: no Action tells the player what to actually do next game. e.g. 'Before each objective spawn, place 2 control wards in key areas like t' needs a measurable target (2 control wards, under 3 deaths, 5 CS/min)"
+    ],
+    "configs": {
+      "baseline": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      },
+      "v2": {
+        "passed_first": true,
+        "feedback": "",
+        "repaired": false,
+        "passed_final": true,
+        "final_contradictions": 0,
+        "shipped_contradictions": 0,
+        "fell_back_to_template": false,
+        "latency_repair": 0.0
+      }
+    }
+  }
+]
